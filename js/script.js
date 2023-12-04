@@ -241,5 +241,16 @@ $('#menutoprect').on('click',function () {
     }
 });
 
+// 定義捲動到錨點的函式
+function scrollToAnchor(anchorId) {
+    window.location.hash = anchorId;
+}
 
+// 在新視窗中捲動到 main 錨點
+function navigateToMainPage() {
+    var newWindow = window.open("index.html", "_blank");
+    newWindow.onload = function() {
+        newWindow.location.hash = 'main';
+    };
+}
 

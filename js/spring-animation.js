@@ -250,9 +250,19 @@ $(document).ready(function () {
 });
 
 
+// function navigateToMainPage() {
+//     window.open("index.html", "_blank"); 
+//     window.scrollTo("#main");
+    
+// }
+
 function navigateToMainPage() {
-    window.open("index.html", "_blank"); 
+    var newWindow = window.open("index.html", "_blank");
+    newWindow.onload = function() {
+        newWindow.location.hash = 'main';
+    };
 }
+
 
 let menutoprect=document.querySelector("#menutoprect");
 let menu_windowcontent=document.querySelector("#menu_windowcontent");
