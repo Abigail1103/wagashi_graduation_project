@@ -11,6 +11,10 @@ if (currentURL.includes("index.html#main")) {
     }
 }
 
+function navigateToMainTop(){
+  window.open("index.html","_self");
+}
+
 
 window.onload = function () {
     // // 添加一个 CSS 类，以触发淡出和平移效果
@@ -66,7 +70,7 @@ window.onload = function () {
   }
   function navigateToWinterPage() {
     // 添加一个 CSS 类，以触发淡出过渡效果
-    document.body.classList.add("fade-out");
+    // document.body.classList.add("fade-out");
   
     // 在过渡结束后，页面导航到 winter.html
     setTimeout(function () {
@@ -175,7 +179,7 @@ window.onload = function () {
         pin: true, // pin the trigger element while active
         //   pinSpacing: false,
         start: "top top", // when the top of the trigger hits the top of the viewport
-        end: "100%", // end after scrolling 500px beyond the start
+        end: "350%", // end after scrolling 500px beyond the start
         scrub: true,
         // markers: true,
         id: "doors",
@@ -217,8 +221,8 @@ window.onload = function () {
         4
       )
       .to("#history", 1, { opacity: 0 }, 4)
-      .to("#heShi", 1, { opacity: 1 })
-      .to("#gap-1", 1, { opacity: 1 })
+      .to("#heShi", 1, { opacity: 1 },5)
+      .to("#gap-1", 1, { opacity: 1 },6)
     // .fromTo("#block-l",1,{x:- $("#block-l").width() +200},{x:0})
     // .fromTo("#block-r",1,{ x:$("#block-r").width() -200},{x:0})
   

@@ -116,8 +116,15 @@ h6.MENU {
     writing-mode: vertical-lr;
     flex-direction: row;
     padding: auto;
-
+    cursor: pointer;
 }
+.title:hover {
+    scale: 103%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
 .logo {
     width: 100px;
     height: auto;
@@ -172,7 +179,7 @@ h6.MENU {
     background-image: url(../image/卷軸.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+    cursor: pointer;
     
     
 
@@ -583,9 +590,13 @@ a:active {
     background-size: cover;
     background-position: center center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+}
 
+.stillbuildingimg {
+    width: 60px;
+    height: auto;
 }
