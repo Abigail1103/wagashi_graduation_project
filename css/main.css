@@ -34,6 +34,7 @@ body {
     transform: translateY(20px); */
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -110,9 +111,11 @@ h6.MENU {
     /* text-align: bottom; */
     /* vertical-align: bottom; */
     align-items: center;
+    justify-content: center;
     /* outline: solid 1px black; */
     writing-mode: vertical-lr;
-    
+    flex-direction: row;
+    padding: auto;
 
 }
 .logo {
@@ -555,6 +558,17 @@ a:active {
     background-position: center center;
     /* background:linear-gradient(to bottom, #e6b884 0%, transparent 100%); */
 }
+
+.heShi {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+}
+
 
 
 /* otherpages */

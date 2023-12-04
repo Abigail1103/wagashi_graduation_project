@@ -17,6 +17,14 @@ window.onload = function() {
     setTimeout(function() {
         document.body.classList.remove('fade-out');
     }, 1000); // 1000 毫秒是淡出和平移效果的总时间
+
+    let cursorSpring = document.getElementById("cursorSpring");
+window.addEventListener("mousemove",function(e){
+  let x = e.clientX;
+  let y = e.clientY;
+  cursorSpring.style.left = x-40+"px"; 
+  cursorSpring.style.top = y-40+"px";
+})
     
 }
 
@@ -229,6 +237,7 @@ btn_right.onclick = function() {
     lookNum=lookNum+1;
 }
 
+
 // btn_close.onclick = function() {
 //     // btn_close.style.image="./image/close.png";
 //     gsap.fromTo("#popup_spring",1,{y:0},{y:2000});
@@ -257,12 +266,21 @@ $(document).ready(function () {
     
 // }
 
+
+定義捲動到錨點的函式
+function scrollToAnchor(anchorId) {
+    window.location.hash = anchorId;
+}
 function navigateToMainPage() {
-    var newWindow = window.open("index.html", "_blank");
+    var newWindow = window.open("index.html", "_self");
     newWindow.onload = function() {
         newWindow.location.hash = 'main';
     };
+    // var gotomain=true;
+    // gotomain();
 }
+
+
 
 
 let menutoprect=document.querySelector("#menutoprect");
@@ -283,6 +301,8 @@ $('#menutoprect').on('click',function () {
 });
 
 
+
+// cursor
 
 
 

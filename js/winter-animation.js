@@ -258,3 +258,10 @@ $('#menutoprect').on('click',function () {
         isMenuClick = false;        
     }
 });
+
+function navigateToMainPage() {
+    var newWindow = window.open("index.html", "_self");
+    newWindow.onload = function() {
+        newWindow.location.hash = '#main';
+    };
+}
