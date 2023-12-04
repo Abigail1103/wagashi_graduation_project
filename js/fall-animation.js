@@ -1,4 +1,6 @@
 // spring-animation.js 文件内容
+
+
 window.onload = function() {
     // 添加一个 CSS 类，以触发淡出和平移效果
     document.body.classList.add('fade-in');
@@ -17,6 +19,14 @@ window.onload = function() {
     setTimeout(function() {
         document.body.classList.remove('fade-out');
     }, 1000); // 1000 毫秒是淡出和平移效果的总时间
+    
+    let cursorFall = document.getElementById("cursorFall");
+    window.addEventListener("mousemove",function(e){
+    let x = e.clientX;
+    let y = e.clientY;
+    cursorFall.style.left = x-40+"px"; 
+    cursorFall.style.top = y-40+"px";
+    });
 }
 
 

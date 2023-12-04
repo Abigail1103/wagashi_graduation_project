@@ -12,6 +12,13 @@ window.onload = function() {
             image.style.marginBottom = '-50px';
         });
     }, 500); // 500 毫秒是淡出效果的时间
+    let cursorSummer = document.getElementById("cursorSummer");
+window.addEventListener("mousemove",function(e){
+  let x = e.clientX;
+  let y = e.clientY;
+  cursorSummer.style.left = x-40+"px"; 
+  cursorSummer.style.top = y-40+"px";
+})
 
     // 过渡结束后，移除动画类
     setTimeout(function() {

@@ -51,8 +51,8 @@ body {
 }
 
 /* cursor */
-#cursorSpring {
-    width: 50px;
+.cursor {
+    width: auto;
     height: 50px;
     position: absolute;
 }
@@ -645,7 +645,7 @@ a:active {
     margin-top: -10px;
     transition:all 0.5s;
     /* opacity: 80%; */
-    filter: drop-shadow(5px 10px 5px rgba(82, 34, 119, 0.5));
+    filter: drop-shadow(5px 10px 5px rgba(119, 79, 34, 0.5));
 }
 .image_wagashi_winter {
     position: relative;
@@ -795,7 +795,7 @@ a:active {
 }
 
 .popup_contentarea.summer {
-    background-color: #defffd;
+    background-color: #ceedeb;
 }
 .popup_contentarea.fall {
     background-color: #fff0de;

@@ -22,10 +22,12 @@ window.onload = function () {
     // document.body.classList.add("fade-out");
   
     // 在过渡结束后，页面导航到 spring.html
-    setTimeout(function () {
+    // setTimeout(function () {
       // window.location.href = "spring.html";
       window.open("spring.html", "_blank");
-    }, 500); // 500 毫秒是过渡效果的时间
+    // }, 500); // 500 毫秒是过渡效果的时间
+
+
   }
   function navigateToFallPage() {
     // 添加一个 CSS 类，以触发淡出过渡效果
@@ -45,7 +47,7 @@ window.onload = function () {
     // 在过渡结束后，页面导航到 summer.html
     setTimeout(function () {
       // window.location.href = "summer.html";
-    //   window.open("summer.html", "_blank");
+      window.open("summer.html", "_blank");
     }, 500); // 500 毫秒是过渡效果的时间
   }
   function navigateToWinterPage() {

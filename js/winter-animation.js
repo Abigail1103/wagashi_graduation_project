@@ -1,4 +1,7 @@
 // spring-animation.js 文件内容
+
+
+
 window.onload = function() {
     // 添加一个 CSS 类，以触发淡出和平移效果
     document.body.classList.add('fade-in');
@@ -265,3 +268,11 @@ function navigateToMainPage() {
         newWindow.location.hash = '#main';
     };
 }
+
+let cursor = document.getElementById("cursorWinter");
+    window.addEventListener("mousemove",function(e){
+    let x = e.clientX;
+    let y = e.clientY;
+    cursor.style.left = x-40+"px"; 
+    cursor.style.top = y-40+"px";
+    })
