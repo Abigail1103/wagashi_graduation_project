@@ -45,6 +45,13 @@ h1 {
     letter-spacing: 5px; 
 
 }
+h3 {
+    font-size: 2rem;
+    line-height: 150%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    color: #553d38;
+}
 h6 {
     font-size: 1.3rem;
     color: antiquewhite;
@@ -551,3 +558,17 @@ a:active {
 
 
 /* otherpages */
+
+.stillbuilding {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/背景1.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}

@@ -17,6 +17,7 @@ window.onload = function() {
     setTimeout(function() {
         document.body.classList.remove('fade-out');
     }, 1000); // 1000 毫秒是淡出和平移效果的总时间
+    
 }
 
 

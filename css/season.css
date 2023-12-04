@@ -47,6 +47,7 @@ body {
     transform: translateY(20px);
     box-sizing: border-box;
     overflow: hidden;
+    cursor: auto;
 }
 
 /* title */
