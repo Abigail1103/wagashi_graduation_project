@@ -352,6 +352,7 @@ a:active {
     transition:all 0.5s;
     
     scale: 95%;
+    cursor:url(../image/cursor/cursorSpring_Resize\ Image.png),auto;
 }
 
 
@@ -370,6 +371,7 @@ a:active {
     transition:all 0.5s;
     
     scale: 95%;
+    cursor:url(../image/cursor/cursorFall_Resize\ Image.png),auto;
 }
 
 
@@ -389,7 +391,7 @@ a:active {
     /* margin-top: -10px; */
     transition:all 0.5s;
     scale: 95%;
-    
+    cursor:url(../image/cursor/cursorSummer_Resize\ Image\(h24\).png),auto;
     
 }
 
@@ -410,6 +412,7 @@ a:active {
     /* filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5)); */
     /* filter: brightness(80%); */
     scale: 95%;
+    cursor:url(../image/cursor/cursorWinter_Resize\ Image.png),auto;
 }
 
 

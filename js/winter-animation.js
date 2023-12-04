@@ -264,10 +264,10 @@ $('#menutoprect').on('click',function () {
 
 
 
-let cursor = document.getElementById("cursorWinter");
-    window.addEventListener("mousemove",function(e){
-    let x = e.clientX;
-    let y = e.clientY;
-    cursor.style.left = x-40+"px"; 
-    cursor.style.top = y-40+"px";
-    })
+// let cursor = document.getElementById("cursorWinter");
+//     window.addEventListener("mousemove",function(e){
+//     let x = e.clientX;
+//     let y = e.clientY;
+//     cursor.style.left = x-40+"px"; 
+//     cursor.style.top = y-40+"px";
+//     })

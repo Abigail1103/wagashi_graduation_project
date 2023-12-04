@@ -48,6 +48,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     /* cursor:none; */
+    /* cursor: url("../image/cursor/cursorSpring_Resize\ Image.png"),auto; */
 }
 
 /* cursor */
@@ -232,21 +233,25 @@ p {
     /* background-color: #fdaeb1; */
     background-image: url(../image/春背景.png);
     background-size: cover;
+    cursor: url("../image/cursor/cursorSpring_Resize\ Image.png"),auto;
 }
 .container-summer {
     /* background-color: #aee3db; */
     background-image: url(../image/夏背景.png);
     background-size: cover;
+    cursor: url("../image/cursor/cursorSummer_Resize\ Image\(h24\).png"),auto;
 }
 .container-fall {
     /* background-color: #ffd4a3; */
     background-image: url(../image/秋背景.png);
     background-size: cover;
+    cursor: url("../image/cursor/cursorFall_Resize\ Image.png"),auto;
 }
 .container-winter {
     /* background-color: #c4c6ec; */
     background-image: url(../image/冬背景.png);
     background-size: cover;
+    cursor: url("../image/cursor/cursorWinter_Resize\ Image.png"),auto;
 }
 
 
@@ -758,24 +763,28 @@ a:active {
 .popup_spring {
     background-color: #9D2929;
     display: none;
+    cursor: url("../image/cursor/cursorSpring_Resize\ Image.png"),auto;
 
 }
 .popup_summer {
     background-color: #299d90;
     display: none;
     filter: drop-shadow(5px 10px 5px rgba(34, 112, 119, 0.5));
+    cursor: url("../image/cursor/cursorSummer_Resize\ Image\(h24\).png"),auto;
 
 }
 .popup_fall {
     background-color: #9d5d29;
     display: none;
     filter: drop-shadow(5px 10px 5px rgba(119, 88, 34, 0.5));
+    cursor: url("../image/cursor/cursorFall_Resize\ Image.png"),auto;
 
 }
 .popup_winter {
     background-color: #6f397a;
     display: none;
     filter: drop-shadow(5px 10px 5px rgba(88, 34, 119, 0.5));
+    cursor: url("../image/cursor/cursorWinter_Resize\ Image.png"),auto;
 
 }
 

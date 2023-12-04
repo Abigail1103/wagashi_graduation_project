@@ -260,7 +260,6 @@ $(document).ready(function () {
     
 });
 
-
 function navigateToMainPage() {
     window.open("index.html#main", "_self"); 
 
@@ -303,13 +302,13 @@ $('#menutoprect').on('click',function () {
 
 
 // cursor
-let cursor = document.querySelector("#cursorSpring");
-    // let cursorSpring = document.getElementById("cursorSpring");
-window.addEventListener("mousemove",function(e){
-let x = e.clientX;
-let y = e.clientY;
-cursorSpring.style.left = x-40+"px"; 
-cursorSpring.style.top = y-40+"px";
-});
+// let cursor = document.querySelector("#cursorSpring");
+//     // let cursorSpring = document.getElementById("cursorSpring");
+// window.addEventListener("mousemove",function(e){
+// let x = e.clientX;
+// let y = e.clientY;
+// cursorSpring.style.left = x-40+"px"; 
+// cursorSpring.style.top = y-40+"px";
+// });
 
 
