@@ -245,7 +245,7 @@ $(document).ready(function () {
 });
 
 function navigateToMainPage() {
-    window.open("index.html", "_blank"); 
+    window.open("index.html#main", "_self"); 
 }
 
 let menutoprect=document.querySelector("#menutoprect");
@@ -265,9 +265,3 @@ $('#menutoprect').on('click',function () {
     }
 });
 
-function navigateToMainPage() {
-    var newWindow = window.open("index.html", "_self");
-    newWindow.onload = function() {
-        newWindow.location.hash = '#main';
-    };
-}

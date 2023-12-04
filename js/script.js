@@ -1,3 +1,17 @@
+
+var currentURL = window.location.href;
+// 檢查是否包含指定的片段
+if (currentURL.includes("index.html#main")) {
+    // 如果是，將 ID 為 doors 的元素的 display 設置為 none
+    var doorsElement = document.getElementById("doors");
+    var logoabovedoors = document.getElementById("logoabovedoors");
+    if (doorsElement) {
+        doorsElement.style.display = "none"
+        logoabovedoors.style.display="none"
+    }
+}
+
+
 window.onload = function () {
     // // 添加一个 CSS 类，以触发淡出和平移效果
     // document.body.classList.add('fade-in');
