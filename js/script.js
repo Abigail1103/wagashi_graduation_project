@@ -177,7 +177,7 @@ window.onload = function () {
         start: "top top", // when the top of the trigger hits the top of the viewport
         end: "100%", // end after scrolling 500px beyond the start
         scrub: true,
-        markers: true,
+        // markers: true,
         id: "doors",
       },
     });
