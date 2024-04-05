@@ -796,6 +796,7 @@ a:active {
     background-image: url(../image/冬背景.png);
 }
 
+
 .gameCoverTitle {
     display: flex;
     /* border: solid 1px #000; */
@@ -978,9 +979,6 @@ a:active {
     width: 50%;
     height: auto;
     
-
-    
-    
 }
 
 .AnswerImageSpace {
@@ -998,6 +996,7 @@ a:active {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .TwoImage {
     width: 50%;
@@ -1005,4 +1004,123 @@ a:active {
     padding: 10px;
     font-family: SweiGothicLegCJKtc-Light;
     font-size: 0.8rem;"
+}
+
+/* 其他頁面 */
+
+.other_N {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-image: url(../image/背景_天空.png);
+    padding: 100px 100px 150px 100px;
+
+}
+
+.otherContentArea {
+    width: 600px;
+    height: 220vh;
+    background-color: rgba(241, 228, 211,0.8);
+    border:solid 2px #91726c;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}
+.TwoField {
+    display: flex;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.NItem {
+    height: 100%;
+    display: flex;
+    color: #553d38;
+    justify-content: start;
+    align-items: start;
+    /* outline: solid 1px #000; */
+    text-align: start;
+    
+}
+.cloud {
+    position: absolute;
+}
+.c1 {
+    opacity: 80%;
+    right: 0;
+    top: 0;
+    margin-top: 300px;
+    margin-right: 10px;
+}
+.c1:hover {
+    margin-right: 25px;
+    transition: all 1.5s;
+}
+.c2 {
+    opacity: 90%;
+    left: 0;
+    top: 0;
+    margin-top: 550px;
+    margin-left: 15px;
+}
+.c2:hover {
+    margin-left: 35px;
+    opacity: 98%;
+    transition: all 1.5s;
+}
+.c3 {
+    opacity: 85%;
+    left: 0;
+    right: 0;
+    margin-top: 700px;
+    margin-left: 50px;
+}
+.c3:hover {
+    margin-left: 10px;
+    transition: all 1.5s;
+    opacity: 90%;
+}
+.c4 {
+    opacity: 70%;
+    right: 0;
+    top: 0;
+    margin-top: 1200px;
+    margin-right: 10px;
+}
+.c4:hover {
+    margin-right: 35px;
+    transition: all 1.5s;
+}
+.cloudImg {
+    width: 300px;
+
+}
+
+
+.other_roof {
+    width: auto;
+    height: 200px;
+    background-color: #384455;
+    background-image: none;
+    justify-content: start;
+}
+
+.other_title {
+    width: 250px;
+    height: 100px;
+    margin-top: -40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border:solid 3px #91726c;
+}
+
+.other_Sk {
+    width: 100vw;
+    height: 250vh;
+    background-size: cover;
+    background-image: url(../image/背景_技法.png);
+
 }
