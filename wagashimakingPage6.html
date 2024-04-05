@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+    <!-- 需要的函式庫 -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+
+    <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/gameJsStep4.js"></script>
+
+</head>
+<body>
+    <div class="allAlignCenter">
+        <div class="processBar">
+            <img src="./image/processBar/小遊戲bar 4.png" alt="" class="barImg">
+        </div>
+        <div class="gameCenterSpace flex-col">
+            <h3 style="font-size: 1.2rem;color: #e3d1ca">你的麵團看起來容光煥發！接下來要選一個適合的餡料作為和菓子
+                <br>的靈魂，你會選擇？</h3>
+            <div class="gameOptionBtn direc-colAndWide" id="sentAnswerA">(A) 去皮紅豆沙餡
+                <p style="font-size: 0.8rem;margin-bottom: 0%;">(燉煮紅豆，煮軟後將皮去除乾淨，加入水和砂糖，一邊加熱一邊攪拌而製成的餡料。)</p>
+            </div>
+            <div class="gameOptionBtn direc-colAndWide" id="sentAnswerB">(B) 白餡
+                <p style="font-size: 0.8rem;margin-bottom: 0%;"> (燉煮白色四季豆，煮軟後將皮去除，加入水和砂糖，一邊加熱一邊攪拌而製成的餡料。)</p>
+            </div>
+            <div class="gameOptionBtn direc-colAndWide" id="sentAnswerC">(C) 煉切餡
+                <p style="font-size: 0.8rem;margin-bottom: 0%;">(山藥削皮後蒸軟過篩，加入白餡後一邊加熱一邊攪拌而製成的餡料。)</p>
+            </div>
+            <div class="gameOptionBtn direc-colAndWide" id="sentAnswerD">(D) 芝麻餡
+                <p style="font-size: 0.8rem;margin-bottom: 0%;"> (將芝麻炒過後過篩，篩出的細滑芝麻再加入白餡與水，一邊加熱一邊攪拌而製成的餡料。)</p>
+            </div>
+        </div>
+        <div class="btnArea">
+            <div class="btn quesChange" id="navigateToLastPage" target="_self">
+                <h3 class="h3 quesChangeFont">←上個步驟</h3>
+            </div>
+            <div class="btn quesChange" id="navigateToNextPage" target="_self">
+                <h3 class="h3 quesChangeFont">下個步驟→</h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+</body>
+</html>

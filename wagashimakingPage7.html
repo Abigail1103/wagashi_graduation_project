@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+    <!-- 需要的函式庫 -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+
+    <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/gameJsStep5.js"></script>
+
+</head>
+<body>
+    <div class="allAlignCenter">
+        <div class="processBar">
+            <img src="./image/processBar/小遊戲bar 5.png" alt="" class="barImg">
+        </div>
+        <div class="gameCenterSpace flex-col">
+            <h3 style="font-size: 1.2rem;color: #e3d1ca">精緻的和菓子需要職人的巧手雕塑！
+                <br>接下來選擇要用什麼方式塑形吧！</h3>
+            <div class="gameOptionBtn" id="sentAnswerA">(A) 使用三角棒壓出花紋</div>
+            <div class="gameOptionBtn" id="sentAnswerB">(B) 放入方形模具中塑型</div>
+            <div class="gameOptionBtn" id="sentAnswerC">(C) 使用針著雕刻出花瓣</div>
+            <div class="gameOptionBtn" id="sentAnswerD">(D) 使用蛋形模塑出圓弧</div>
+        </div>
+        <div class="btnArea">
+            <div class="btn quesChange" id="navigateToLastPage" target="_self">
+                <h3 class="h3 quesChangeFont">←上個步驟</h3>
+            </div>
+            <div class="btn quesChange" id="navigateToNextPage" target="_self">
+                <h3 class="h3 quesChangeFont">下個步驟→</h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+</body>
+</html>

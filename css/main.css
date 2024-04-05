@@ -17,8 +17,13 @@
   }
   @font-face {
     font-family: SweiGothicLegCJKtc-Thin;
-    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Light.woff2) format("woff2")
-    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Light.woff) format("woff");
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Thin.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Thin.woff) format("woff");
+  }
+  @font-face {
+    font-family: SweiGothicLegCJKtc-Black;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Black.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Black.woff) format("woff");
   }
 
   /* font */
@@ -53,6 +58,18 @@ h3 {
     font-weight: 400;
     color: #553d38;
 }
+.gameStartFont {
+    font-weight: bold;
+}
+.quesChangeFont {
+    font-size: 1rem;
+    font-weight: Medium;
+    line-height: 100%;
+    font-family: SweiGothicLegCJKtc-Regular;
+    color: #421111;
+    
+}
+
 h6 {
     font-size: 1.3rem;
     color: antiquewhite;
@@ -68,6 +85,35 @@ h6.MENU {
     align-items: center;
     justify-content: center;
 
+}
+
+.gameTitleFont {
+    font-family: SweiGothicLegCJKtc-Black;
+    font-size: 3.8rem;
+    /* color: #e3d1ca; */
+    
+}
+
+.gameTitleFontHighlight {
+    /* font-family: SweiGothicLegCJKtc-Black; */
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 4.5rem;
+    
+}
+.gameSubtitleFont {
+    font-family: SweiGothicLegCJKtc-Medium;
+    font-size: 2rem;
+    
+    
+    
+}
+
+p {
+    text-align: center;
+    font-family: SweiGothicLegCJKtc-Regular;
+    font-size: 1.2rem;
+    line-height: 150%;
 }
 
 
@@ -154,8 +200,100 @@ h6.MENU {
     height: 35px;
     background-color: #421111;
     color: #fff;
+    
 
 
+}
+
+.inputName {
+    width: 350px;
+    height: 33px;
+    margin: 20px;
+    padding: 0;
+    /* outline: solid 2px #f3e7e7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    font-family: SweiGothicLegCJKtc-Light;
+
+}
+.inputNameBox {
+    width: 60%;
+    height: 100%;
+    /* outline: solid 2px #d0c6c6; */
+    border: solid 2px #d6c4c4;
+    border-radius: 5px;
+    background-color: #ffffffd0;
+    text-align: center;
+}
+
+
+.gameStart {
+    width: 230px;
+    margin: 35px;
+    outline: solid 2px #f3e7e7;
+    background-color: #d4bcb7;
+    filter: drop-shadow(3px 5px 1px rgba(177, 156, 156, 0.5)); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13px;
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    color: #553d38;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 13px;
+    padding-left: 28px;
+    
+
+}
+
+.gameStart:hover {
+    cursor: pointer;
+    width: 235px;
+    height: 55px;
+    background-color: #ba9790;
+    transition: all 0.5s;
+}
+
+.nextPage {
+    width: 130px;
+    margin: 25px;
+    outline: solid 2px #f3e7e7;
+    background-color: #d4bcb7;
+    filter: drop-shadow(3px 5px 1px rgba(177, 156, 156, 0.5)); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.nextPage:hover {
+    cursor: pointer;
+    width: 135px;
+    height: 55px;
+    background-color: #ba9790;
+    transition: all 0.5s;
+}
+.quesChange {
+    width: 120px;
+    height: 30px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    outline: solid 1.5px #c5b3b0;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+.quesChange:hover {
+    background-color: #c5b3b0;
 }
 
 /* 右邊選單區塊 */
@@ -599,4 +737,272 @@ a:active {
 .stillbuildingimg {
     width: 60px;
     height: auto;
+}
+.btn_back {
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    margin-left: 60px;
+    margin-top: 1.5%;
+    font-size: 10px;
+    background-image: url(../image/back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+    transition: margin-top 0.5s, filter 0.5s; /* 添加過渡效果屬性 */
+
+}
+.btn_back:hover {
+    /* margin-top: 25px; */
+    scale: 110%;
+    /* opacity: 0.6; */
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    /* filter: drop-shadow(0px 10px 5px rgba(147, 147, 147, 0.5)); */
+}
+
+/* 小遊戲頁面 */
+
+.allAlignCenter {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../image/盒子木紋.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+}
+.bgiCov {
+    background-image: url(../image/背景_技法.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgiS {
+    background-image: url(../image/春背景.png);
+}
+.bgiM {
+    background-image: url(../image/夏背景.png);
+}
+.bgiF {
+    background-image: url(../image/秋背景.png);
+}
+.bgiW {
+    background-image: url(../image/冬背景.png);
+}
+
+.gameCoverTitle {
+    display: flex;
+    /* border: solid 1px #000; */
+    width: 800px;
+    height: 120px;
+    justify-content: end;
+    align-items: center;
+}
+.gameCoverSubtitle {
+    display: flex;
+    /* border: solid 1px #000; */
+    width: 800px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.space {
+    width: 320px;
+    /* border: solid 1px #000; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamePage2Title {
+    display: flex;
+    /* border: solid 1px #000; */
+    width: 800px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameCenterSpace {
+    width: 680px;
+    /* border: solid 1px #000; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+    border-radius: 10px;
+    background-color: rgba(183, 161, 161, 0.3);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    width: 750px;
+    flex-direction: row;
+}
+.bgcS {
+    background-color: rgba(234, 147, 150,0.7);
+}
+.bgcM {
+    background-color: rgba(131, 201, 189,0.7);
+}
+.bgcF {
+    background-color: rgba(235, 201, 127,0.7);
+}
+.bgcW {
+    background-color: rgba(222, 200, 244,0.7);
+}
+
+
+
+.gameOptionBtn {
+    width: 400px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: dashed 1px #421111;
+    border-radius: 10px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #421111;
+    cursor: pointer;
+}
+.direc-colAndWide {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    
+}
+.gameOptionBtn:hover {
+    background-color: #91726c;
+    color: #fff;
+}
+
+.processBar {
+    width: 800px;
+    height: 100px;
+    /* border: solid 1px #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(5px 5px 5px rgba(49, 33, 33, 0.8));
+}
+
+.barImg {
+    width: auto;
+    height: 100%;
+}
+.small {
+    height: 80px;
+}
+
+.btnArea {
+    width: 680px;
+    height: 60px;
+    /* border: solid 1px #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+.btnAreaAnswerPage {
+    width: 680px;
+    height: 60px;
+    /* border: solid 1px #000; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+.bgcBlack {
+    background-color: #553d38;
+    color: #d6c4c4;
+    transition: all 0.5s;
+}
+
+.AnswerTextSpace {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+
+}
+.AnswerTitle {
+    font-size: 2rem;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 8px;
+    color: #fff;
+    margin: 15px;
+
+}
+.AnswerContent {
+    font-family: SweiGothicLegCJKtc-Medium;
+    font-size: 1.2rem;
+    color: #9D2929;
+    margin-bottom: 30px;
+
+}
+.AnswerRelated {
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.AnswerRelatedItem {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    
+
+    
+    
+}
+
+.AnswerImageSpace {
+    width: 50%;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AnswerImage {
+    width: 100%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+.TwoZoneFlex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.TwoImage {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    font-family: SweiGothicLegCJKtc-Light;
+    font-size: 0.8rem;"
 }
