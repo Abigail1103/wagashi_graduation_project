@@ -42,3 +42,6 @@ function signUp(){
 function navigateToNextPage(){
   window.open("wagashimakingPage3.html","_self");
 }
+function navigateToMainPage(){
+  window.open("index.html#main", "_self"); 
+}

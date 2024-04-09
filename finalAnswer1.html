@@ -17,7 +17,7 @@
     <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>
     <script src="js/jquery.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script  src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="js/gameAnswer.js"></script>
 
 </head>
@@ -29,28 +29,28 @@
         <div class="gameCenterSpace flex-row bgcS">
             <div class="AnswerTextSpace">
                 <div class="AnswerTitle">西櫻餅兔</div>
-                <div class="AnswerContent">恭喜您完成了屬於您的菓子靈！<br>西櫻餅兔的原型為關西道明寺櫻餅，<br>是有點害羞的和菓子靈，<br>特色是屁股上的櫻花胎記。<br>喜歡鹽漬櫻葉的香氣。</div>
+                <div class="AnswerContent">恭喜您完成了屬於您的菓子靈！<br>西櫻餅兔的原型為關西道明寺櫻餅，<br>悠哉可愛的和菓子靈，<br>看似害羞但其實喜歡交朋友，<br>特色是屁股上的櫻花胎記。<br>喜歡鹽漬櫻葉的香氣。</div>
                 <div class="AnswerRelated">
                     <div class="AnswerRelatedItem">
                         <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">相合的菓子靈</p>
                         <div class="TwoZoneFlex">
                             <img src="./image/cursor/Answer2.png" alt="" class="TwoImage">
-                            <img src="./image/cursor/Answer8.png" alt="" class="TwoImage">
+                            <img src="./image/cursor/Answer7.png" alt="" class="TwoImage">
                         </div>
                         <div class="TwoZoneFlex">
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">錦玉史萊姆</p>
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">錦玉史萊姆</p>
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">史萊姆錦玉</p>
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">生銅鑼燒狐狸</p>
                         </div>
                     </div>
                     <div class="AnswerRelatedItem">
                         <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">互補的菓子靈</p>
                         <div class="TwoZoneFlex">
-                            <img src="./image/cursor/Answer5.png" alt="" class="TwoImage">
-                            <img src="./image/cursor/Answer7.png" alt="" class="TwoImage">
+                            <img src="./image/cursor/Answer6.png" alt="" class="TwoImage">
+                            <img src="./image/cursor/Answer8.png" alt="" class="TwoImage">
                         </div>
                         <div class="TwoZoneFlex">
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">錦玉史萊姆</p>
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">錦玉史萊姆</p>
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">水族箱錦玉</p>
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">烤麻糬山雀</p>
                         </div>
                     </div>
                 </div>
@@ -60,11 +60,14 @@
             </div>
         </div>
         <div class="btnAreaAnswerPage">
-            <div class="btn quesChange" id="screenShot" onclick="htmlToCanvas('Answer1')" target="_self">
+            <div class="btn quesChange" onclick="navigateToMainPage()" target="_self">
+                <h3 class="h3 quesChangeFont">返回主頁</h3>
+            </div>
+            <div class="btn quesChange" id="screenShot" onclick="screenshot1()" target="_self">
                 <h3 class="h3 quesChangeFont">截圖結果</h3>
             </div>
             <div class="btn quesChange" id="share" target="_self">
-                <h3 class="h3 quesChangeFont">好友分享</h3>
+                <h3 class="h3 quesChangeFont">LINE分享</h3>
             </div>
             <div class="btn quesChange" id="restart" target="_self">
                 <h3 class="h3 quesChangeFont">再測一次</h3>

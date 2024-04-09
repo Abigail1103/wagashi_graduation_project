@@ -8,10 +8,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/otherJs.js"></script>
 </head>
 <body>
     <!-- 名詞 -->
     <div class="allAlignCenter other_N">
+        <!-- button -->
+        <div class="btn_back btn_logo" id="btn_back" onclick="navigateToMainPage()" target="_self"></div>
+        <div class="menu">
+            <div class="btn_menu mt" id="menutoprect">MENU</div>
+            <div class="menu_window" >
+                <div class="menu_windowcontent" id="menu_windowcontent">
+                    <div id="link1" class="pagelink lineLow" style="margin-top: -15px;">
+                        <a href="index.html#main">四季菓子</a>
+                    </div>
+                    <div id="link2" class="pagelink lineLow">
+                        <a href="jargon.html" target="_blank">吉祥物圖鑑</a>
+                    </div>
+                    <div id="link3" class="pagelink lineLow">
+                        <a href="otherwagashi.html" target="_blank">專業名詞解說</a>
+                    </div>
+                    <div id="link4" class="pagelink lineLow">
+                        <a href="wagashimakingPage1.html" target="_blank">菓子靈製作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_menu mb" id="btn_menumb"></div>
+        </div>    
         <div class="otherContentArea">
             <h3 style="margin-bottom: 50px; font-weight: 500;">名詞解釋</h3>
             <div class="TwoField">
@@ -60,12 +85,143 @@
     <!-- 屋簷 -->
     <div class="allAlignCenter other_roof">
         <div class="other_title">
-            <h3 style="font-weight: 500;">技法</h3>
+            <!-- <h3 style="font-weight: 500;font-size: 2.5rem; color: black;">技法</h3> -->
+            <img src="./image/title/技法.png" alt="" style="scale: 70%;">
         </div>
     </div>
     <!-- 技法 -->
     <div class="allAlignCenter other_Sk">
-
+        <div class="TwoField">
+            <h6 class="NItem" style="width: 250px; font-size: 1.3rem;">◆はさみ菊<br>(針切り菊)</h6>
+            <p class="NItem" style="font-size: 1rem;width: 550px;">剪菊是使用針著將精心處理過的練切餡一刀一刀剪開，使其形成猶如菊花花瓣細緻的形狀。除了菊花造型的和菓子外，也被運用在凸顯立體度的花瓣或葉子形狀上。
+            </p>
+        </div>
+        <div class="TwoField">
+            <h6 class="NItem" style="width: 250px; font-size: 1.3rem;">◆手形もの</h6>
+            <p class="NItem" style="font-size: 1rem;width: 550px;">「手形もの」意指由純手工技巧製作的和菓子，通常使用小竹棒等輔助工具，以捕捉自然風景等特色的和菓子製作技術的精髓。
+            </p>
+        </div>
+        <div class="other_title noBoard">
+            <!-- <h3 style="font-weight: 500;">材料</h3> -->
+            <img src="./image/title/材料.png" alt="" style="scale: 70%;">
+        </div>
     </div>
+    <!-- 材料 -->
+    <div class="allAlignCenter other_mat">
+        <div class="TwoField" style="width: 650px;">
+            <div class="matItemBorder" style="margin-right: 65px;">
+                <div class="matItem">
+                    <div>
+                        <img src="./image/練切.png" alt="" class="matItemImg" style="padding: 10px;filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6));">
+                    </div>
+                    <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                        <h3 style="font-size: 1.2rem;font-weight: 500;">練り切り(練切)</h3>
+                        <div class="redLine" style="margin-bottom: 20px;"></div>
+                        <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">以白豆沙為基礎，混合糯米等<br>黏性材料，反覆撕裂和揉捏，<br>並以製成的『練切』進行著色<br>和成型，以形成各種形狀。<br><b>*有較為沙沙粉粉的觸感!</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="matItemBorder">
+                <div class="matItem">
+                    <div>
+                        <img src="./image/こなし.png" alt="" class="matItemImg" style="padding: 10px;filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6));">
+                    </div>
+                    <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                        <h3 style="font-size: 1.2rem;font-weight: 500;">こなし</h3>
+                        <div class="redLine" style="margin-bottom: 20px;"></div>
+                        <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">「こなし」是指將小麥粉和餅<br>粉混合後蒸熟的餡料。名稱的<br>由來源自於京都方言中的「こ<br>なす」（意為用手揉搓）。跟練<br>切十分相似，但更有彈性、<br>味道更淡。<br><b>*跟練切比起來更加<br>有彈性!</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="TwoField" style="width: 650px;">
+            <div class="matItemBorder" style="margin-right: 65px;">
+                <div class="matItem">
+                    <div>
+                        <img src="./image/winter/w5.png" alt="" class="matItemImg">
+                    </div>
+                    <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                        <h3 style="font-size: 1.2rem;font-weight: 500;">求肥</h3>
+                        <div class="redLine" style="margin-bottom: 20px;"></div>
+                        <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">以白豆沙為基礎，混合糯米等<br>黏性材料，反覆撕裂和揉捏，<br>並以製成的『練切』進行著色<br>和成型，以形成各種形狀。<br><b>*有較為沙沙粉粉的觸感!</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="matItemBorder">
+                <div class="matItem">
+                    <div>
+                        <img src="./image/和三盆.png" alt="" class="matItemImg" style="margin-top: 160px;filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6)); ">
+                    </div>
+                    <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                        <h3 style="font-size: 1.2rem;font-weight: 500;">和三盆</h3>
+                        <div class="redLine" style="margin-bottom: 20px;"></div>
+                        <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">是日本特有的手工細砂糖，在<br>白砂糖中，純白、最上等的品<br>種被稱為"三盆白"。通常用於<br>製作日式傳統甜點，但也會將<br>其直接形塑成美麗形狀食用。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other_title noBoard">
+            <!-- <h3 style="font-weight: 500;">材料</h3> -->
+            <img src="./image/title/工具.png" alt="" style="scale: 70%;margin-top: 100px;">
+        </div>
+    </div>
+        <!-- 工具 -->
+        <div class="allAlignCenter other_tool">
+            <div class="TwoField" style="width: 650px;">
+                <div class="matItemBorder" style="margin-right: 65px;border-color: #fff;">
+                    <div class="matItem">
+                        <div>
+                            <img src="./image/菊針.png" alt="" class="matItemImg" style="margin-top: 160px;filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6));">
+                        </div>
+                        <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                            <h3 style="font-size: 1.2rem;font-weight: 500;">針著(針切り箸)</h3>
+                            <div class="redLine" style="margin-bottom: 20px;"></div>
+                            <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">又稱細工鋏、菊針，由兩根如<br>筷子般的細針組成，通常用於<br>剪菊技術或細微雕刻。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="matItemBorder" style="border-color: #fff;">
+                    <div class="matItem">
+                        <div>
+                            <img src="./image/三角棒.png" alt="" class="matItemImg" style="filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6));">
+                        </div>
+                        <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                            <h3 style="font-size: 1.2rem;font-weight: 500;">三角棒(三角べら)</h3>
+                            <div class="redLine" style="margin-bottom: 20px;"></div>
+                            <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">又稱押棒。是以木頭製成的三<br>角形工具，主要用於製作練切<br>和糕點等時，在練切上刻劃溫<br>柔細緻的紋樣。有的三角棒尖<br>端會有可以按壓出菊花花蕊<br>形狀的「菊心」。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TwoField" style="width: 650px;">
+                <div class="matItemBorder" style="margin-right: 65px;border-color: #fff;">
+                    <div class="matItem">
+                        <div>
+                            <img src="./image/黑文字.png" alt="" class="matItemImg" style="filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6));">
+                        </div>
+                        <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                            <h3 style="font-size: 1.2rem;font-weight: 500;">黒文字</h3>
+                            <div class="redLine" style="margin-bottom: 20px;"></div>
+                            <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">「黑文字」是該製作木材的名<br>稱。它是一種落葉低矮灌木，<br>樹皮具有芳香氣味，將其削成<br>條狀作為筷子、木叉使用。黑<br>文字的長度和種類各異，從<br>約10厘米長的細長型到<br>用於正式茶道場合的<br>長筷都有。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="matItemBorder" style="border-color: #fff;">
+                    <div class="matItem">
+                        <div>
+                            <img src="./image/processBar/小遊戲bar.png" alt="" class="matItemImg" style="transform: rotate(-40deg);margin-top: 180px;filter: drop-shadow(0px 2px 2px rgba(46, 46, 46, 0.6));">
+                        </div>
+                        <div class="matItemText" style="margin-top: 20px;padding-left: 10px;">
+                            <h3 style="font-size: 1.2rem;font-weight: 500;">木型</h3>
+                            <div class="redLine" style="margin-bottom: 20px;"></div>
+                            <p style="font-size: 0.9rem;font-weight: normal;text-align: left;">「木型」是一種在江戶時代誕<br>生的工具，是將木頭雕刻成魚<br>、花、風景等圖案後用來塑型<br>的工具。使用方式是將雕刻完<br>成的木型兩塊疊在一起，加<br>入砂糖、飴等材料，就能<br>為菓子塑型。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 草地 -->
+        <div class="allAlignCenter other_gress"></div>
 </body>
 </html>

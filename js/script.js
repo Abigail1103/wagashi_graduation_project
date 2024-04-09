@@ -14,6 +14,9 @@ if (currentURL.includes("index.html#main")) {
 function navigateToMainTop(){
   window.open("index.html","_self");
 }
+function navigateToMainPage(){
+  window.open("index.html#main", "_self"); 
+}
 
 
 window.onload = function () {
@@ -270,8 +273,6 @@ window.onload = function () {
       isMenuClick = false;
     }
   });
-
-
   
 
 

@@ -262,7 +262,6 @@ $(document).ready(function () {
 
 function navigateToMainPage() {
     window.open("index.html#main", "_self"); 
-
 }
 
 
