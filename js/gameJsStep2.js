@@ -45,6 +45,9 @@ $(document).ready(function(){
         });
         $( "#sentAnswerA" ).addClass( "bgcBlack" );
         isclick = true;
+      }else{
+        $( "#sentAnswerA" ).removeClass( "bgcBlack" );
+        isclick = false;
       }
     })
 
@@ -59,6 +62,9 @@ $(document).ready(function(){
         });
         $( "#sentAnswerB" ).addClass( "bgcBlack" );
         isclick = true;
+      }else{
+        $( "#sentAnswerB" ).removeClass( "bgcBlack" );
+        isclick = false;
       }
     })
 
@@ -73,6 +79,9 @@ $(document).ready(function(){
         });
         $( "#sentAnswerC" ).addClass( "bgcBlack" );
         isclick = true;
+      }else{
+        $( "#sentAnswerC" ).removeClass( "bgcBlack" );
+        isclick = false;
       }
     })
 
@@ -85,8 +94,11 @@ $(document).ready(function(){
           // "name": "alva",
           "step2": "D"
         });
-        $( "#sentAnswerC" ).addClass( "bgcBlack" );
+        $( "#sentAnswerD" ).addClass( "bgcBlack" );
         isclick = true;
+      }else{
+        $( "#sentAnswerD" ).removeClass( "bgcBlack" );
+        isclick = false;
       }
     })
     $navigateToNextPage.click(function(e) {

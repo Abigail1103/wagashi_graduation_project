@@ -76,9 +76,9 @@ $(document).ready(function(){
         $( "#sentAnswerA" ).addClass( "bgcBlack" );
         isclick = true;
       }else{
-        docRef.update({
-          "step1": ""
-        });
+        // docRef.update({
+        //   "step1": ""
+        // });
         $( "#sentAnswerA" ).removeClass( "bgcBlack" );
         isclick = false;
       }
@@ -112,6 +112,9 @@ $(document).ready(function(){
         });
         $( "#sentAnswerC" ).addClass( "bgcBlack" );
         isclick = true;
+      }else{
+        $( "#sentAnswerC" ).removeClass( "bgcBlack" );
+        isclick = false;
       }
     })
 
@@ -124,8 +127,11 @@ $(document).ready(function(){
           // "name": "alva",
           "step1": "D"
         });
-        $( "#sentAnswerC" ).addClass( "bgcBlack" );
+        $( "#sentAnswerD" ).addClass( "bgcBlack" );
         isclick = true;
+      }else{
+        $( "#sentAnswerD" ).removeClass( "bgcBlack" );
+        isclick = false;
       }
     })
       

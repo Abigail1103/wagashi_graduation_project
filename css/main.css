@@ -909,8 +909,9 @@ a:active {
     
 }
 .gameOptionBtn:hover {
-    background-color: #91726c;
+    /* background-color: #91726c; */
     color: #fff;
+    scale:102%
 }
 
 .processBar {

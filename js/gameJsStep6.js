@@ -45,6 +45,9 @@ firebase.initializeApp({
       });
       $( "#sentAnswerA" ).addClass( "bgcBlack" );
       isclick = true;
+    }else{
+      $( "#sentAnswerA" ).removeClass( "bgcBlack" );
+      isclick = false;
     }
   })
 
@@ -59,6 +62,9 @@ firebase.initializeApp({
       });
       $( "#sentAnswerB" ).addClass( "bgcBlack" );
       isclick = true;
+    }else{
+      $( "#sentAnswerB" ).removeClass( "bgcBlack" );
+      isclick = false;
     }
   })
 
@@ -73,6 +79,9 @@ firebase.initializeApp({
       });
       $( "#sentAnswerC" ).addClass( "bgcBlack" );
       isclick = true;
+    }else{
+      $( "#sentAnswerC" ).removeClass( "bgcBlack" );
+      isclick = false;
     }
   })
 
@@ -87,6 +96,9 @@ firebase.initializeApp({
       });
       $( "#sentAnswerD" ).addClass( "bgcBlack" );
       isclick = true;
+    }else{
+      $( "#sentAnswerD" ).removeClass( "bgcBlack" );
+      isclick = false;
     }
   })
   $navigateToNextPage.click(function(e) {
