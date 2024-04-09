@@ -74,3 +74,7 @@ function screenshot8(){
   function navigateToMainPage(){
     window.open("index.html#main", "_self"); 
   }
+
+  function restart(){
+    window.open("wagashimakingPage2.html","_self");
+  }
