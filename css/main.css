@@ -1301,7 +1301,7 @@ a:active {
     height: 80px;
 }
 
-.menu {
+.menuOther {
     width: 120px;
     height: 100px;
     top: 0;
@@ -1311,7 +1311,7 @@ a:active {
     position: absolute;
     padding: 0;
 }  
-.btn_menu {
+.btn_menuOther {
     /* position: absolute; */
     padding: 0;
     width: 100%;
@@ -1320,7 +1320,7 @@ a:active {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.btn_menu.mt {
+.btn_menuOther.mt {
     height: 22px;
     text-align: center;
     color:#fff;
@@ -1331,12 +1331,12 @@ a:active {
     justify-content: center;
 
 }
-.btn_menu.mt:hover {
+.btn_menuOther.mt:hover {
     cursor: pointer;
     scale: 110%;
     transition:all 0.5s;
 }
-.btn_menu.mb {
+.btn_menuOther.mb {
     /* position: relative; */
     position: absolute;
     top: 22px;
@@ -1344,7 +1344,7 @@ a:active {
     width: 100%;
     height: 100%;
 }
-.menu_window {
+.menu_windowOther {
     width: 120px;
     height: 150px;
     top: 0;
@@ -1355,7 +1355,7 @@ a:active {
     padding: 0;
 
 }
-.menu_windowcontent {
+.menu_windowcontentOther {
     /* position: absolute; */
     position: relative;
     background-image: url(../image/卷軸中間.png);
@@ -1371,7 +1371,7 @@ a:active {
     align-items: center;
     display: none;
 }
-a:link {
+/* a:link {
     width: 50px;
     /* 設定還沒瀏覽過的連結樣式 */
     font-size: 0.7rem;
@@ -1382,7 +1382,7 @@ a:link {
     /* letter-spacing: 1px;  */
 
     text-decoration: none;
-}
+} */
 a:visited {
     /* 設定已經瀏覽過(懸浮過)的連結樣式 */
     
