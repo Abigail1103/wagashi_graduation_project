@@ -22,11 +22,47 @@
 
 </head>
 <body>
-    <div class="allAlignCenter bgiS" id="Answer1">
-        <div class="processBar small">
-            <img src="./image/processBar/小遊戲bar 7.png" alt="" class="barImg">
+    <div class="allAlignCenter bgiAns" id="Answer1">
+        <div class="btn_back btn_logo" id="btn_back" onclick="navigateToMainPage()" target="_self"></div>
+        <div class="TwoZoneFlex" >
+            <div class="leftZone flex-col" style="padding-right: 50px;">
+                <div class="AnswerImage roll">
+                    <div class="AnswerTitle">西櫻餅兔</div>
+                </div>
+                <!-- <img src="./image/小遊戲卷軸.png" alt="" class="AnswerImage roll"> -->
+                <img src="./image/cursor/Answer1.png" alt="" class="AnswerImage Ans">
+                <img src="./image/小遊戲坐墊.png" alt="" class="AnswerImage sit">
+            </div>
+            <div class="rightZone flex-col" style="padding-right: 100px;">
+                <div class="AnswerContent" >恭喜您完成了屬於您的菓子靈！<br>西櫻餅兔的原型為關西道明寺櫻餅，<br>悠哉可愛的和菓子靈，<br>看似害羞但其實喜歡交朋友，<br>特色是屁股上的櫻花胎記。<br>喜歡鹽漬櫻葉的香氣。
+                </div>
+                <div class="AnswerRelated">
+                    <div class="TwoZoneFlex related">
+                        <img src="./image/cursor/Answer2.png" alt="" class="TwoImage" style="margin-right: -10px;">
+                        <img src="./image/cursor/Answer7.png" alt="" class="TwoImage" style="margin-left: -10px;">
+                    </div>
+                    <div class="TwoZoneFlex related">
+                        <img src="./image/cursor/Answer6.png" alt="" class="TwoImage" style="margin-right: -10px;">
+                        <img src="./image/cursor/Answer8.png" alt="" class="TwoImage" style="margin-left: -10px;">
+                    </div>
+                </div>
+                <div class="AnswerRelated flex-row" style="display:flex;justify-content:space-around;width: 480px;">
+                    <p>相合的菓子靈</p>
+                    <p>互補的菓子靈</p>
+                    <!-- <p style="font-size: 0.8rem;">史萊姆錦玉</p>
+                    <p style="font-size: 0.8rem;">生銅鑼燒狐狸</p>
+                    <p style="font-size: 0.8rem;">水族箱錦玉</p>
+                    <p style="font-size: 0.8rem;">烤麻糬山雀</p> -->
+                </div>
+                
+            </div>
+
+
         </div>
-        <div class="gameCenterSpace flex-row bgcS">
+        <!-- <div class="processBar small">
+            <img src="./image/processBar/小遊戲bar 7.png" alt="" class="barImg">
+        </div> -->
+        <!-- <div class="gameCenterSpace flex-row bgcS">
             <div class="AnswerTextSpace">
                 <div class="AnswerTitle">西櫻餅兔</div>
                 <div class="AnswerContent">恭喜您完成了屬於您的菓子靈！<br>西櫻餅兔的原型為關西道明寺櫻餅，<br>悠哉可愛的和菓子靈，<br>看似害羞但其實喜歡交朋友，<br>特色是屁股上的櫻花胎記。<br>喜歡鹽漬櫻葉的香氣。</div>
@@ -66,13 +102,10 @@
             <div class="btn quesChange" id="screenShot" onclick="screenshot1()" target="_self">
                 <h3 class="h3 quesChangeFont">截圖結果</h3>
             </div>
-            <!-- <div class="btn quesChange" id="share" target="_self">
-                <h3 class="h3 quesChangeFont">LINE分享</h3>
-            </div> -->
             <div class="btn quesChange" id="restart" onclick="restart()" target="_self">
                 <h3 class="h3 quesChangeFont">再測一次</h3>
             </div>
-        </div>
+        </div> -->
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>

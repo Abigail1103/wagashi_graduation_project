@@ -36,13 +36,22 @@
 $(document).ready(function(){
     // Import the functions you need from the SDKs you need
     // Your web app's Firebase configuration
+  // firebase.initializeApp({
+  //   apiKey: "AIzaSyAnMv-C7wztTZfXfTZO4tu9O5tHsThClzA",
+  //   authDomain: "gpver2-5c9f5.firebaseapp.com",
+  //   projectId: "gpver2-5c9f5",
+  //   storageBucket: "gpver2-5c9f5.appspot.com",
+  //   messagingSenderId: "202542197889",
+  //   appId: "1:202542197889:web:239b9815371c432fd5b180"
+  // });
   firebase.initializeApp({
-    apiKey: "AIzaSyAnMv-C7wztTZfXfTZO4tu9O5tHsThClzA",
-    authDomain: "gpver2-5c9f5.firebaseapp.com",
-    projectId: "gpver2-5c9f5",
-    storageBucket: "gpver2-5c9f5.appspot.com",
-    messagingSenderId: "202542197889",
-    appId: "1:202542197889:web:239b9815371c432fd5b180"
+    apiKey: "AIzaSyBd3cIhKt9AGx8i2PB85TdjF_xgJjUFMk4",
+    authDomain: "gpver3.firebaseapp.com",
+    projectId: "gpver3",
+    storageBucket: "gpver3.appspot.com",
+    messagingSenderId: "548134673228",
+    appId: "1:548134673228:web:72831ef32df330f1908de9",
+    measurementId: "G-B2E6N8M01D"
   });
     
   
