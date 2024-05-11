@@ -78,3 +78,7 @@ function screenshot8(){
   function restart(){
     window.open("wagashimakingPage2.html","_self");
   }
+
+  window.onload = function(){
+    gsap.fromTo("#all",1,{opacity:0},{opacity:1});
+  }

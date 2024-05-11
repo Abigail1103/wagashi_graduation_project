@@ -815,6 +815,12 @@ a:active {
 .bgiW {
     background-image: url(../image/冬背景.png);
 }
+.bgiTsukan {
+    background-image: url(../image/圖鑑.png);
+}
+.bgiTsukan2 {
+    background-image: url(../image/圖鑑2.png);
+}
 
 
 .gameCoverTitle {
@@ -1523,3 +1529,40 @@ a:active {
     text-decoration-thickness: 0.5px;
 }
 
+/* 圖鑑 */
+.tsukan4area {
+    display: flex;
+    flex-direction: row;
+    outline: solid 1px #000;
+    width: 700px;
+    height: 500px;
+    justify-content: space-between;
+}
+.tsukanLeftArea {
+    display: flex;
+    flex-direction: column;
+    outline: solid 1px blue;
+    width: 50%;
+}
+.tsukanRightArea {
+    display: flex;
+    flex-direction: column;
+    outline: solid 1px blue;
+    width: 50%;
+}
+.tsukanTopArea {
+    display: flex;
+    flex-direction: column;
+    outline: solid 1px red;
+    height: 50%;
+    padding-top: 10px;
+    padding-left: 90px;
+}
+.tsukanDownArea {
+    display: flex;
+    flex-direction: column;
+    outline: solid 1px red;
+    height: 50%;
+    padding-top: 55px;
+    padding-left: 50px;
+}

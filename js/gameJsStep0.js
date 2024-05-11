@@ -63,6 +63,7 @@ let isStartClick=false;
 
 let birdFlyTimeline = gsap.timeline({repeat:-1});
 let bounceTimeline = gsap.timeline();
+let flowersFlyTimeline = gsap.timeline();
 
 function birdFly(){
   // do {  }while{!isStartClick};
@@ -70,6 +71,12 @@ function birdFly(){
     .fromTo("#bird",1,{y:0},{y:20})
     .fromTo("#bird",1.5,{y:20},{y:0},1);
 };
+
+function flowersFly(){
+  flowersFlyTimeline
+    .to("#flowers",1,{rotation:45})
+    .to("#flowers",1,{rotation:-45});
+}
 
 function bounce(){
   bounceTimeline
@@ -83,13 +90,16 @@ function bounce(){
     .to("#bird", 0.2, { height: "163.68px", ease: "power4.out" }, "-=0.1")
     .eventCallback("onComplete", function() {
       window.open("wagashimakingPage2.html", "_self");
-    });;
+    });
 
 };
 
 window.onload = function(){
+  gsap.fromTo("#all",1,{opacity:0},{opacity:1});
+
   if(!isStartClick){
     birdFly();
+    // flowersFly();
   };
     
   

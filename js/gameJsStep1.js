@@ -28,7 +28,9 @@
 
 // }
 
-
+window.onload = function(){
+  gsap.fromTo("#all",1,{opacity:0},{opacity:1});
+}
 
 
 
