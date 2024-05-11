@@ -30,21 +30,67 @@ $(document).ready(function(){
     //     }
     //   });
 
-    $signUp.click(function(e) {
-        window.open("wagashimakingPage2.html", "_self"); 
-      
-    })
+    
+    $("#signUp").on("click", function () {
+      birdFlyTimeline.pause();
+      bounce();
+      isStartClick=true;
+      // if(isStartClick==true){
+      //   window.open("wagashimakingPage2.html", "_self");
+      // }
+       
+    });
+     
+          
+    
 });
 
-function signUp(){
-  window.open("wagashimakingPage2.html", "_self"); 
-};
+// function signUp(){
+//   window.open("wagashimakingPage2.html", "_self"); 
+// };
 function navigateToNextPage(){
   window.open("wagashimakingPage3.html","_self");
 }
 function navigateToMainPage(){
   window.open("index.html#main", "_self"); 
 }
-function restart(){
-  window.open("wagashimakingPage2.html","_self");
-}
+// function restart(){
+//   window.open("wagashimakingPage2.html","_self");
+// }
+
+let isStartClick=false;
+
+
+let birdFlyTimeline = gsap.timeline({repeat:-1});
+let bounceTimeline = gsap.timeline();
+
+function birdFly(){
+  // do {  }while{!isStartClick};
+  birdFlyTimeline
+    .fromTo("#bird",1,{y:0},{y:20})
+    .fromTo("#bird",1.5,{y:20},{y:0},1);
+};
+
+function bounce(){
+  bounceTimeline
+    // .to("#three",0.5,{height:"250px",ease: "bounce.out"})
+    // .to("#bird",0.5,{height:"130px",ease: "bounce.out"},0)
+    // .to("#three",0.5,{height:"282.02px",ease: "bounce.out"},1)
+    // .to("#bird",0.5,{height:"163.68px",ease: "bounce.out"},1)
+    .to("#three", 0.2, { height: "250px", ease: "power4.out" },0)
+    .to("#bird", 0.2, { height: "130px", ease: "power4.out" },0)
+    .to("#three", 0.2, { height: "282.02px", ease: "power4.out" }, "-=0.1")
+    .to("#bird", 0.2, { height: "163.68px", ease: "power4.out" }, "-=0.1")
+    .eventCallback("onComplete", function() {
+      window.open("wagashimakingPage2.html", "_self");
+    });;
+
+};
+
+window.onload = function(){
+  if(!isStartClick){
+    birdFly();
+  };
+    
+  
+};
