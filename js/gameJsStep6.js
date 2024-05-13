@@ -2,7 +2,10 @@
 window.onload = function(){
   gsap.fromTo("#all",1,{opacity:0},{opacity:1});
 }
-
+let menutoprect=document.querySelector("#menutoprect");
+let menu_windowcontent=document.querySelector("#menu_windowcontent");
+let btn_menumb=document.querySelector("#btn_menumb");
+let isMenuClick=false;
 
 $(document).ready(function(){
   // Import the functions you need from the SDKs you need
@@ -15,6 +18,17 @@ $(document).ready(function(){
 //   messagingSenderId: "202542197889",
 //   appId: "1:202542197889:web:239b9815371c432fd5b180"
 // });
+$('#menutoprect').on('click',function () {
+  if(!isMenuClick) {
+      $('#menu_windowcontent').slideDown(700);
+      gsap.fromTo("#btn_menumb",0.6,{y:0},{y:150,ease:"sine.in"});
+      isMenuClick = true;
+  } else {
+      $('#menu_windowcontent').slideUp(650);
+      gsap.fromTo("#btn_menumb",0.5,{y:150},{y:0,ease:"sine.in"});
+      isMenuClick = false;        
+  }
+});
 firebase.initializeApp({
   apiKey: "AIzaSyBd3cIhKt9AGx8i2PB85TdjF_xgJjUFMk4",
   authDomain: "gpver3.firebaseapp.com",

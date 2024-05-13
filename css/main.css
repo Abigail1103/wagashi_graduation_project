@@ -1168,7 +1168,7 @@ a:active {
 
 .otherContentArea {
     width: 600px;
-    height: 220vh;
+    height: auto;
     background-color: rgba(241, 228, 211,0.8);
     border:solid 2px #91726c;
     display: flex;
@@ -1306,7 +1306,7 @@ a:active {
     width: 100vw;
     height: 150px;
     /* background-color: #384455; */
-    background-image: url(../image/單個屋簷_灰色.png);
+    background-image: url(../image/單個屋簷_灰色_加天空.png);
     background-position: center center;
     background-size: cover;
     justify-content: start;
@@ -1363,8 +1363,9 @@ a:active {
     padding-top: 90px;
 }
 .other_gress {
-    background-image: url(../image/背景_草地.png);
-    height: 40vh;
+    background-image: url(../image/背景_草地修正後.png);
+    height: 60vh;
+    background-position: center top;
 }
 
 .noBoard {
@@ -1375,31 +1376,36 @@ a:active {
 }
 
 .matItemBorder {
-    width: 285px;
+    width: 462px;
     height: 285px;
     /* padding: 5px; */
-    border: solid 2px #553d38;
+    /* border: solid 2px #553d38; */
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .matItem {
-    width: 275px;
-    height: 275px;
+    width: 352px;
+    height: 240px;
     /* border: solid 2px #553d38; */
-    background-image: url(../image/背景_方框底圖.png);
+    background-image: url(../image/介紹_方框.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
     
     
 }
 .matItemImg {
-    width: 110px;
-    margin-top: 140px;
-    margin-left: -50px;
+    /* width: 110px; */
+    height: 220px;
+    /* margin-top: 140px; */
+    /* margin-left: -50px; */
     
 }
 .redLine {
@@ -1410,7 +1416,7 @@ a:active {
 .matItemText {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    /* align-items: end; */
     /* width: 130px; */
 }
 
