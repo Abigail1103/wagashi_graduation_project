@@ -592,7 +592,7 @@ a:active {
 /* 便當盒底部那條繪圖 */
 .lunchbox-bottom {
     width: 700px;
-    height: 6%;
+    height: 9%;
     margin-top: -3%;
     /* outline: solid 1px blue; */
     background-image: url(../image/盒子木紋.png);
@@ -1306,7 +1306,7 @@ a:active {
     width: 100vw;
     height: 150px;
     /* background-color: #384455; */
-    background-image: url(../image/單個屋簷_灰色_加天空.png);
+    background-image: url(../image/單個屋簷_灰色_加天空2.png);
     background-position: center center;
     background-size: cover;
     justify-content: start;
