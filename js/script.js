@@ -1,4 +1,6 @@
 
+
+
 var currentURL = window.location.href;
 // 檢查是否包含指定的片段
 if (currentURL.includes("index.html#main")) {
@@ -26,10 +28,13 @@ function messageAlert(){
     .fromTo("#message",2,{opacity:1},{opacity:0});
 }
 
-window.onload = function () {
-    messageAlert();
-    
 
+window.onload = function () {
+  if(currentURL.includes("index.html#main")) {
+    $("#message").addClass("displayNone");
+  }else{
+    messageAlert();
+  }
   };
   
   function navigateToSpringPage() {
@@ -78,40 +83,65 @@ window.onload = function () {
   
   // four seasons animation
   $(document).ready(function () {
+    // menu animation
+  let menu_windowcontent = document.querySelector("#menu_windowcontent");
+  let menubottomrect = document.querySelector("#menubottomrect");
+  let menutoprect = document.querySelector("#menutoprect");
+  let isMenuClick = false;
+  
+  $("#menutoprect").on("click", function () {
+    if (!isMenuClick) {
+      $("#menu_windowcontent").slideDown(800);
+      isMenuClick = true;
+    } else {
+      $("#menu_windowcontent").slideUp(300);
+      isMenuClick = false;
+    }
+  });
+
+  let title = document.querySelector("#title");
+  let toplip = document.querySelector("#toplip");
+  $("#title").on("mouseenter", function () {
+    $("#toplip").removeClass("displayNone");
+}).on("mouseleave", function () {
+    $("#toplip").addClass("displayNone");
+});
+
+
     let openingAnimWindow = document.querySelector("#spring");
     let openingAnimData = {
       container: openingAnimWindow,
       animType: "svg",
-      loop: false,
+      loop: true,
       prerender: true,
-      autoplay: false,
+      autoplay: true,
       path: "json/spring.json",
     };
     let openingsummerWindow = document.querySelector("#summer");
     let openingsummerData = {
       container: openingsummerWindow,
       animType: "svg",
-      loop: false,
+      loop: true,
       prerender: true,
-      autoplay: false,
+      autoplay: true,
       path: "json/summer.json",
     };
     let openingfallWindow = document.querySelector("#fall");
     let openingfallData = {
       container: openingfallWindow,
       animType: "svg",
-      loop: false,
+      loop: true,
       prerender: true,
-      autoplay: false,
+      autoplay: true,
       path: "json/fall.json",
     };
     let openingwinterWindow = document.querySelector("#winter");
     let openingwinterData = {
       container: openingwinterWindow,
       animType: "svg",
-      loop: false,
+      loop: true,
       prerender: true,
-      autoplay: false,
+      autoplay: true,
       path: "json/winter.json",
     };
     let openingAnim = bodymovin.loadAnimation(openingAnimData);
@@ -248,28 +278,15 @@ window.onload = function () {
       .to("#history2", 1, { opacity: 1, ease: "power4.out" })
       .to("#history2", 1, { y: 0 }, 0)
       .to("#gap", 1, { opacity: 2 });
+
+
+
+    
   });
   
   // .to("#jyounama",1,{opacity:0})
   
-  // menu animation
-  let menu_windowcontent = document.querySelector("#menu_windowcontent");
-  let menubottomrect = document.querySelector("#menubottomrect");
-  let menutoprect = document.querySelector("#menutoprect");
-  let isMenuClick = false;
   
-  $("#menutoprect").on("click", function () {
-    if (!isMenuClick) {
-      $("#menu_windowcontent").slideDown(800);
-      isMenuClick = true;
-    } else {
-      $("#menu_windowcontent").slideUp(300);
-      isMenuClick = false;
-    }
-  });
-  
-
-
 
 
 

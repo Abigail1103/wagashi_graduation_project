@@ -92,15 +92,15 @@ function screenshot9(){
   }
 
   window.onload = function(){
-    gsap.fromTo("#Answer1",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer2",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer3",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer4",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer5",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer6",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer7",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer8",2,{opacity:0},{opacity:1});
-    gsap.fromTo("#Answer9",2,{opacity:0},{opacity:1});
+    gsap.fromTo("#Answer1",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer2",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer3",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer4",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer5",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer6",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer7",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer8",2,{opacity:0.8},{opacity:1});
+    gsap.fromTo("#Answer9",2,{opacity:0.8},{opacity:1});
     birdFly();
   }
 

@@ -90,7 +90,7 @@ function bounce(){
 };
 
 window.onload = function(){
-  gsap.fromTo("#all",1,{opacity:0},{opacity:1});
+  gsap.fromTo("#all",1,{opacity:0.8},{opacity:1});
 
   if(!isStartClick){
     birdFly();

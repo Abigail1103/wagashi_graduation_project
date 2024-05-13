@@ -845,7 +845,7 @@ a:active {
 
 }
 .popup_img.spring {
-    filter: drop-shadow(5px 10px 5px rgba(119, 62, 34, 0.5));
+    filter: drop-shadow(5px 10px 5px rgba(84, 48, 28, 0.6));
 }
 .popup_img.summer {
     filter: drop-shadow(5px 10px 5px rgba(34, 112, 119, 0.5));
@@ -942,3 +942,18 @@ a:active {
 }
 
 
+.leftZone {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* outline: solid 1px #fff; */
+
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
