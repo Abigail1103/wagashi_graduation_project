@@ -15,6 +15,9 @@
     
 </head>
 <body>
+    <div class="message" id="message"><!--提示方塊-->
+        <h3 style="font-size: 1rem;font-family: SweiGothicLegCJKtc-Regular;margin: 0;" >可以滾動滑鼠以開啟拉門喔！</h3>
+    </div>
     <div class="doors" id="doors">
         <div class="insidedoors" id="insidedoors">
             <h3 class="history" id="history">現今和果子的原型源自奈良時代從唐朝傳入的「唐菓子」。<br>這時期唐菓子的用途是用來祭神所用的祭品。<br>而在鎌倉時代，從宋朝學法的僧人傳進羊羹類和饅頭類的食物以及茶苗，<br>也帶回來「喝茶搭配吃點心」的習慣。<br>後來經過口味調整後，逐漸發展成日本的特色甜點。<br>
@@ -59,12 +62,12 @@
             </div>
             
             <div class="maincontent">
-                <div class="lunchbox-area">
-                    <div class="topseason">
+                <div class="lunchbox-area" >
+                    <div class="topseason" style="z-index: 1;">
                         <div id="spring" class="spring" onclick="navigateToSpringPage()" target="_blank"></div>
                         <div id="fall" class="fall" onclick="navigateToFallPage()"></div>
                     </div>
-                    <div class="downseason">
+                    <div class="downseason" style="z-index: 1;">
                         <div id="summer"class="summer" onclick="navigateToSummerPage()"></div>
                         <div id="winter" class="winter" onclick="navigateToWinterPage()"></div>
                     </div>
@@ -109,12 +112,12 @@
             </div>
             
             
-
+            
 
         </div>
 
 
-
+        
     </div>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>

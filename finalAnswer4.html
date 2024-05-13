@@ -22,42 +22,45 @@
 
 </head>
 <body>
-    <div class="allAlignCenter bgiM" id="Answer4">
-        <div class="processBar small">
-            <img src="./image/processBar/小遊戲bar 7.png" alt="" class="barImg">
-        </div>
-        <div class="gameCenterSpace flex-row bgcM">
-            <div class="AnswerTextSpace">
-                <div class="AnswerTitle">水族箱錦玉</div>
-                <div class="AnswerContent" style="color: #1d6c5e;">恭喜您完成了屬於您的菓子靈！<br>水族箱錦玉的原型為方形錦玉羹，<br>方方正正的錦玉和菓子靈，<br>性格有些一板一眼的，但很照顧自己體內的金魚夥伴。</div>
+    <div class="allAlignCenter bgiAns" id="Answer4">
+        <div class="btn_back btn_logo" id="btn_back" onclick="navigateToMainPage()" target="_self"></div>
+        <div class="TwoZoneFlex" >
+            <div class="leftZone flex-col" style="padding-right: 50px;">
+                <div class="AnswerImage roll">
+                    <div class="AnswerTitle" style="font-family: SweiGothicLegCJKtc-Medium;font-size: 1.5rem;">水族箱錦玉</div>
+                </div>
+                <!-- <img src="./image/小遊戲卷軸.png" alt="" class="AnswerImage roll"> -->
+                <img src="./image/cursor/Answer6.png" alt="" class="AnswerImage Ans" style="position: relative;z-index: 2;">
+                <img src="./image/小遊戲坐墊.png" alt="" class="AnswerImage sit" style="position: relative;z-index: 0;">
+            </div>
+            <div class="rightZone flex-col" style="padding-right: 100px;">
+                <div class="AnswerContent" >恭喜您完成了屬於您的菓子靈！<br>
+                    水族箱錦玉的原型為方形錦玉羹，<br>
+                    方方正正的錦玉和菓子靈，<br>
+                    性格有些一板一眼的，<br>但很照顧自己體內的金魚夥伴。
+                </div>
                 <div class="AnswerRelated">
-                    <div class="AnswerRelatedItem">
-                        <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">相合的菓子靈</p>
-                        <div class="TwoZoneFlex">
-                            <img src="./image/cursor/Answer5.png" alt="" class="TwoImage">
-                            <img src="./image/cursor/Answer8.png" alt="" class="TwoImage">
-                        </div>
-                        <div class="TwoZoneFlex">
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">東櫻餅兔</p>
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">烤麻糬山雀</p>
-                        </div>
+                    <div class="TwoZoneFlex related">
+                        <img src="./image/cursor/Answer5.png" alt="" class="TwoImage" style="margin-right: -10px;">
+                        <img src="./image/cursor/Answer8.png" alt="" class="TwoImage" style="margin-left: -10px;">
                     </div>
-                    <div class="AnswerRelatedItem">
-                        <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">互補的菓子靈</p>
-                        <div class="TwoZoneFlex">
-                            <img src="./image/cursor/Answer1.png" alt="" class="TwoImage">
-                            <img src="./image/cursor/Answer3.png" alt="" class="TwoImage">
-                        </div>
-                        <div class="TwoZoneFlex">
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">西櫻餅兔</p>
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">銅鑼燒狐狸</p>
-                        </div>
+                    <div class="TwoZoneFlex related">
+                        <img src="./image/cursor/吉祥物新春.png" alt="" class="TwoImage" style="margin-right: -10px;">
+                        <img src="./image/cursor/吉祥物新秋.png" alt="" class="TwoImage" style="margin-left: -10px;">
                     </div>
                 </div>
+                <div class="AnswerRelated flex-row" style="display:flex;justify-content:space-between;width: 380px;margin-top: -20px;">
+                    <p>相合的菓子靈</p>
+                    <p>互補的菓子靈</p>
+                    <!-- <p style="font-size: 0.8rem;">史萊姆錦玉</p>
+                    <p style="font-size: 0.8rem;">生銅鑼燒狐狸</p>
+                    <p style="font-size: 0.8rem;">水族箱錦玉</p>
+                    <p style="font-size: 0.8rem;">烤麻糬山雀</p> -->
+                </div>
+                
             </div>
-            <div class="AnswerImageSpace">
-                <img src="./image/cursor/Answer6.png" alt="" class="AnswerImage">
-            </div>
+            
+
         </div>
         <div class="btnAreaAnswerPage">
             <div class="btn quesChange" onclick="navigateToMainPage()" target="_self">
@@ -66,13 +69,57 @@
             <div class="btn quesChange" id="screenShot" onclick="screenshot4()" target="_self">
                 <h3 class="h3 quesChangeFont">截圖結果</h3>
             </div>
-            <!-- <div class="btn quesChange" id="share" target="_self">
-                <h3 class="h3 quesChangeFont">好友分享</h3>
-            </div> -->
             <div class="btn quesChange" id="restart" onclick="restart()" target="_self">
                 <h3 class="h3 quesChangeFont">再測一次</h3>
             </div>
         </div>
+        <!-- <div class="processBar small">
+            <img src="./image/processBar/小遊戲bar 7.png" alt="" class="barImg">
+        </div> -->
+        <!-- <div class="gameCenterSpace flex-row bgcS">
+            <div class="AnswerTextSpace">
+                <div class="AnswerTitle">西櫻餅兔</div>
+                <div class="AnswerContent">恭喜您完成了屬於您的菓子靈！<br>西櫻餅兔的原型為關西道明寺櫻餅，<br>悠哉可愛的和菓子靈，<br>看似害羞但其實喜歡交朋友，<br>特色是屁股上的櫻花胎記。<br>喜歡鹽漬櫻葉的香氣。</div>
+                <div class="AnswerRelated">
+                    <div class="AnswerRelatedItem">
+                        <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">相合的菓子靈</p>
+                        <div class="TwoZoneFlex">
+                            <img src="./image/cursor/Answer2.png" alt="" class="TwoImage">
+                            <img src="./image/cursor/Answer7.png" alt="" class="TwoImage">
+                        </div>
+                        <div class="TwoZoneFlex">
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">史萊姆錦玉</p>
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">生銅鑼燒狐狸</p>
+                        </div>
+                    </div>
+                    <div class="AnswerRelatedItem">
+                        <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">互補的菓子靈</p>
+                        <div class="TwoZoneFlex">
+                            <img src="./image/cursor/Answer6.png" alt="" class="TwoImage">
+                            <img src="./image/cursor/Answer8.png" alt="" class="TwoImage">
+                        </div>
+                        <div class="TwoZoneFlex">
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">水族箱錦玉</p>
+                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">烤麻糬山雀</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="AnswerImageSpace">
+                <img src="./image/cursor/Answer1.png" alt="" class="AnswerImage">
+            </div>
+        </div>
+        <div class="btnAreaAnswerPage">
+            <div class="btn quesChange" onclick="navigateToMainPage()" target="_self">
+                <h3 class="h3 quesChangeFont">返回主頁</h3>
+            </div>
+            <div class="btn quesChange" id="screenShot" onclick="screenshot1()" target="_self">
+                <h3 class="h3 quesChangeFont">截圖結果</h3>
+            </div>
+            <div class="btn quesChange" id="restart" onclick="restart()" target="_self">
+                <h3 class="h3 quesChangeFont">再測一次</h3>
+            </div>
+        </div> -->
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>

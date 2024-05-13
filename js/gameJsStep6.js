@@ -183,6 +183,8 @@ firebase.initializeApp({
             // alert(AnswerZone);
             window.open("finalAnswer8.html", "_self");
           }
+        }else if(x==0 && y==0){
+          window.open("finalAnswer9.html", "_self");
         }
       });
     

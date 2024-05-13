@@ -22,42 +22,44 @@
 
 </head>
 <body>
-    <div class="allAlignCenter bgiF" id="Answer6">
-        <div class="processBar small">
-            <img src="./image/processBar/小遊戲bar 7.png" alt="" class="barImg">
-        </div>
-        <div class="gameCenterSpace flex-row bgcF">
-            <div class="AnswerTextSpace">
-                <div class="AnswerTitle">生銅鑼燒狐狸</div>
-                <div class="AnswerContent" style="color: #a65930;">恭喜您完成了屬於您的菓子靈！<br>生銅鑼燒狐狸的原型為生銅鑼燒，<br>華麗又愛漂亮的小狐狸和菓子靈，<br>喜歡用不同的配料及奶油裝飾自己，<br>還會根據季節進行特色搭配。</div>
+    <div class="allAlignCenter bgiAns" id="Answer6">
+        <div class="btn_back btn_logo" id="btn_back" onclick="navigateToMainPage()" target="_self"></div>
+        <div class="TwoZoneFlex" >
+            <div class="leftZone flex-col" style="padding-right: 50px;">
+                <div class="AnswerImage roll">
+                    <div class="AnswerTitle" style="font-family: SweiGothicLegCJKtc-Medium;font-size: 1.4rem;">生銅鑼燒狐狸</div>
+                </div>
+                <!-- <img src="./image/小遊戲卷軸.png" alt="" class="AnswerImage roll"> -->
+                <img src="./image/cursor/Answer7.png" alt="" class="AnswerImage Ans" style="position: relative;z-index: 2;">
+                <img src="./image/小遊戲坐墊.png" alt="" class="AnswerImage sit" style="position: relative;z-index: 0;">
+            </div>
+            <div class="rightZone flex-col" style="padding-right: 100px;">
+                <div class="AnswerContent" >恭喜您完成了屬於您的菓子靈！<br>
+                    生銅鑼燒狐狸的原型為生銅鑼燒，<br>
+                    華麗又愛漂亮的小狐狸和菓子靈，<br>喜歡用不同的配料及奶油裝飾自己，<br>還會根據季節進行特色搭配。
+                </div>
                 <div class="AnswerRelated">
-                    <div class="AnswerRelatedItem">
-                        <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">相合的菓子靈</p>
-                        <div class="TwoZoneFlex">
-                            <img src="./image/cursor/Answer1.png" alt="" class="TwoImage">
-                            <img src="./image/cursor/Answer3.png" alt="" class="TwoImage">
-                        </div>
-                        <div class="TwoZoneFlex">
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">西櫻餅兔</p>
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">銅鑼燒狐狸</p>
-                        </div>
+                    <div class="TwoZoneFlex related">
+                        <img src="./image/cursor/吉祥物新春.png" alt="" class="TwoImage" style="margin-right: -10px;">
+                        <img src="./image/cursor/吉祥物新秋.png" alt="" class="TwoImage" style="margin-left: -10px;">
                     </div>
-                    <div class="AnswerRelatedItem">
-                        <p style="font-family: SweiGothicLegCJKtc-Light;font-size: 1rem;color: #553d38;text-decoration: underline;margin-bottom: 0;">互補的菓子靈</p>
-                        <div class="TwoZoneFlex">
-                            <img src="./image/cursor/Answer5.png" alt="" class="TwoImage">
-                            <img src="./image/cursor/Answer4.png" alt="" class="TwoImage">
-                        </div>
-                        <div class="TwoZoneFlex">
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">東櫻餅兔</p>
-                            <p class="TwoImage" style="padding: 0;margin-bottom: 0;">麻糬山雀</p>
-                        </div>
+                    <div class="TwoZoneFlex related">
+                        <img src="./image/cursor/Answer5.png" alt="" class="TwoImage" style="margin-right: -10px;">
+                        <img src="./image/cursor/吉祥物新冬.png" alt="" class="TwoImage" style="margin-left: -10px;">
                     </div>
                 </div>
+                <div class="AnswerRelated flex-row" style="display:flex;justify-content:space-between;width: 380px;margin-top: -20px;">
+                    <p>相合的菓子靈</p>
+                    <p>互補的菓子靈</p>
+                    <!-- <p style="font-size: 0.8rem;">史萊姆錦玉</p>
+                    <p style="font-size: 0.8rem;">生銅鑼燒狐狸</p>
+                    <p style="font-size: 0.8rem;">水族箱錦玉</p>
+                    <p style="font-size: 0.8rem;">烤麻糬山雀</p> -->
+                </div>
+                
             </div>
-            <div class="AnswerImageSpace">
-                <img src="./image/cursor/Answer7.png" alt="" class="AnswerImage" style="padding: 20px;">
-            </div>
+            
+
         </div>
         <div class="btnAreaAnswerPage">
             <div class="btn quesChange" onclick="navigateToMainPage()" target="_self">
@@ -66,13 +68,11 @@
             <div class="btn quesChange" id="screenShot" onclick="screenshot6()" target="_self">
                 <h3 class="h3 quesChangeFont">截圖結果</h3>
             </div>
-            <!-- <div class="btn quesChange" id="share" target="_self">
-                <h3 class="h3 quesChangeFont">LINE分享</h3>
-            </div> -->
             <div class="btn quesChange" id="restart" onclick="restart()" target="_self">
                 <h3 class="h3 quesChangeFont">再測一次</h3>
             </div>
         </div>
+
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>

@@ -44,6 +44,20 @@ body {
     padding: 0;
     
 }
+.message {
+    position: absolute;
+    width: 250px;
+    height: 50px; 
+    border-radius: 5px;
+    background-color: #b4998281;
+    z-index: 1;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    left: 3%;
+    top: 3%;
+}
 
 
 h1 {
@@ -578,13 +592,14 @@ a:active {
 /* 便當盒底部那條繪圖 */
 .lunchbox-bottom {
     width: 700px;
-    height: 3%;
-    margin-top: 1%;
+    height: 6%;
+    margin-top: -3%;
     /* outline: solid 1px blue; */
     background-image: url(../image/盒子木紋.png);
+    filter: brightness(0.6);
     background-size: cover;
-    border-radius: 8px;
-
+    border-radius: 0 0 12px 12px ;
+    
 
 }
 
@@ -801,7 +816,7 @@ a:active {
 }
 .bgiAns {
     background-image: url(../image/小遊戲背景.png);
-    background-position: bottom bottom;
+    background-position: center bottom;
 }
 .bgiS {
     background-image: url(../image/春背景.png);
@@ -816,10 +831,16 @@ a:active {
     background-image: url(../image/冬背景.png);
 }
 .bgiTsukan {
-    background-image: url(../image/圖鑑.png);
+    background-image: url(../image/圖鑑_1.png);
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.5s;
 }
 .bgiTsukan2 {
-    background-image: url(../image/圖鑑2.png);
+    background-image: url(../image/圖鑑_2.png);
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.5s;
 }
 
 
@@ -878,6 +899,7 @@ a:active {
     background-color: rgba(255, 248, 228, 0.5);
 }
 .flex-col {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1068,7 +1090,7 @@ a:active {
     margin-right: 30px;
 }
 .sit {
-    /* z-index: -1; */
+    z-index: 0;
     margin-top: -100px;
     filter: drop-shadow(0px 10px 5px rgba(85, 72, 95, 0.674));
     margin-right: 30px;
@@ -1533,36 +1555,220 @@ a:active {
 .tsukan4area {
     display: flex;
     flex-direction: row;
-    outline: solid 1px #000;
-    width: 700px;
-    height: 500px;
+    /* outline: solid 1px #000; */
+    width: 750px;
+    height: 550px;
     justify-content: space-between;
 }
 .tsukanLeftArea {
     display: flex;
     flex-direction: column;
-    outline: solid 1px blue;
+    /* outline: solid 1px blue; */
     width: 50%;
 }
 .tsukanRightArea {
     display: flex;
     flex-direction: column;
-    outline: solid 1px blue;
+    /* outline: solid 1px blue; */
     width: 50%;
 }
 .tsukanTopArea {
     display: flex;
     flex-direction: column;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     height: 50%;
-    padding-top: 10px;
-    padding-left: 90px;
+    /* padding-top: 10px; */
+    /* padding-left: 90px; */
+    /* justify-content: space-between; */
+    align-items: start;
 }
 .tsukanDownArea {
     display: flex;
     flex-direction: column;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     height: 50%;
-    padding-top: 55px;
-    padding-left: 50px;
+    padding-top: 50px;
+    /* padding-left: 50px; */
+    /* justify-content: space-between; */
+}
+.tsukanTitle {
+    width: 220px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 1.5rem;
+    font-weight: 500; 
+    font-family: SweiGothicLegCJKtc-Medium;
+    /* outline: solid 1px blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tsukanTitleSpring {
+    background-image: url(../image/圖鑑_紙膠帶_春.png);
+    color: #9D2929; 
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.tsukanTitleSummer {
+    background-image: url(../image/圖鑑_紙膠帶_夏.png);
+    color: #1d6c5e; 
+}
+.tsukanTitleFall {
+    background-image: url(../image/圖鑑_紙膠帶_秋.png);
+    color: #a65930; 
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.tsukanTitleWinter {
+    background-image: url(../image/圖鑑_紙膠帶_冬.png);
+    color: #7c358b; 
+    margin-left: 45px;
+}
+.tsukanContent {
+    font-size: 0.85rem;
+    font-family: SweiGothicLegCJKtc-Regular;
+    /* outline: solid 1px blue; */
+    line-height: 150%;
+    width: 180px;
+    margin-top: 8px;
+    border-radius: 8px;
+    cursor: zoom-in;
+    
+}
+.tsukanContent:hover {
+    scale: 120%;
+    font-family: SweiGothicLegCJKtc-Medium;
+    background-color: #fffbf4ca;
+    /* transition: all 0.5s; */
+    outline: solid 10px #fffbf4ca;
+}
+.zoomInImage {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* background-color: #fff; */
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    cursor: zoom-in;
+    z-index: 1;
+    background-color: #fffbf4d6;
+}
+.ZSpr {
+    align-self: flex-end;
+    margin-top: 8%;
+    background-image: url(../image/cursor/吉祥物新春.png);
+}
+
+.ZSpr2 {
+    align-self: start;
+    background-image: url(../image/cursor/Answer5.png);
+}
+.ZSum {
+    align-self: flex-start;
+    margin-top: 5%;
+    background-image: url(../image/cursor/吉祥物新夏.png);
+}
+.ZSum2 {
+    align-self: flex-end;
+    background-image: url(../image/cursor/Answer6.png);
+}
+.ZF {
+    align-self: flex-end;
+    margin-top: 8%;
+    background-image: url(../image/cursor/吉祥物新秋.png);
+}
+.ZF2 {
+    align-self: flex-start;
+    background-image: url(../image/cursor/Answer7.png);
+}
+.ZW {
+    align-self: flex-start;
+    margin-top: 5%;
+    background-image: url(../image/cursor/吉祥物新冬.png);
+    background-color: #f8edded6;
+}
+
+.ZW2 {
+    align-self: flex-end;
+    background-image: url(../image/cursor/Answer8.png);
+    background-color: #fffbf4d6;
+}
+
+
+.zoomInImage:hover {
+    scale: 160%;
+    opacity: 1;
+    
+    border-radius: 80px;
+    
+}
+.dogEared {
+    position: absolute;
+    background-image: url(../image/next.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 108px;
+    margin-right: 165px;
+    background-color: #d6c9bd8e;
+    border-radius: 30px;
+    outline: solid 5px #d6c9bd8e;
+}
+.dogEared:hover {
+    scale: 125%;
+    /* margin-bottom: 116px; */
+    /* margin-right: 211px; */
+    filter: drop-shadow(1px 1px 1px #a7a4a0d6);
+    cursor: pointer;
+    
+}
+.dogEared2 {
+    background-image: url(../image/back.png);
+    left: 0;
+    margin-left: 165px;
+    display: none;
+}
+.dogEared2:hover {
+    scale: 125%;
+    /* margin-bottom: 116px; */
+    /* margin-left: 211px; */
+    filter: drop-shadow(1px 1px 1px #a7a4a0d6);
+    cursor: pointer;
+}
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block;
+}
+.displayFlex {
+    display: flex;
+}
+.alignRight {
+    align-self: end;
+}
+.alignLeft {
+    align-self: center;
+}
+.alignCenter {
+    align-self: center;
+    
+}
+.ml {
+    margin-left: 50px;
+}
+.mr {
+    margin-right: 30px;
+}
+.w200 {
+    width: 200px;
 }

@@ -7,23 +7,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/tsukan.js"></script>
 </head>
-<body>
+<body style="background-color: #7c7069;">
     <div class="allAlignCenter bgiTsukan" id="tsukan">
         <div class="tsukan4area">
             <div class="tsukanLeftArea">
                 <div class="tsukanTopArea">
-                    <h3 style="font-size: 1.5rem;color: #9D2929; font-weight: 500; font-family: SweiGothicLegCJKtc-Medium;">西櫻餅兔</h3>
+                    <div class="tsukanTitle tsukanTitleSpring">西櫻餅兔</div>
+                    <div class="tsukanContent" style="margin-left: 35px;color: #9D2929; " id="springText">
+                        <u>原型</u>：關西道明寺櫻餅<br>
+                        <u>特長</u>：在櫻吹雪下屹立不搖<br>
+                        <u>簡介</u>：悠哉可愛的和菓子靈，<br>看似害羞但其實喜歡交朋友，<br>特色是屁股上的櫻花胎記。<br>喜歡鹽漬櫻葉的香氣。<br>
+                    </div>
+                    <div class="zoomInImage ZSpr" style="" id="springZoomIn"></div>
                 </div>
                 <div class="tsukanDownArea">
-                    <h3 style="font-size: 1.5rem;color: #1d6c5e; font-weight: 500;font-family: SweiGothicLegCJKtc-Medium;">史萊姆錦玉</h3>
+                    <div class="tsukanTitle tsukanTitleSummer">史萊姆錦玉</div>
+                    <div class="tsukanContent alignRight" style="color: #1d6c5e;margin-right: 60px; width: 230px;" id="summerText">
+                        <u>原型</u>：圓形錦玉羹<br>
+                        <u>特長</u>：可以吞掉比自己大一倍的金魚<br>
+                        <u>簡介</u>：圓圓QQ的錦玉和菓子靈，活潑好動，常常像史萊姆一樣跳來跳去，總是讓體內的金魚暈車。
+                    </div>
+                    <div class="zoomInImage ZSum" style="" id="summerZoomIn"></div>
                 </div>
             </div>
             <div class="tsukanRightArea">
-                <div class="tsukanTopArea"></div>
-                <div class="tsukanDownArea"></div>
+                <div class="tsukanTopArea">
+                    <div class="tsukanTitle tsukanTitleFall">銅鑼燒狐狸</div>
+                    <div class="tsukanContent" style="margin-left: 35px;color: #a65930; margin-left: 90px;width: 170px;" id="fallText">
+                        <u>原型</u>：銅鑼燒<br>
+                        <u>特長</u>：舉辦各種試膽大會<br>
+                        <u>簡介</u>：喜歡擬態的銅鑼燒和菓子靈，喜歡惡作劇。常常會偷偷混在要拿去賣的銅鑼燒裡面。
+                    </div>
+                    <div class="zoomInImage ZF" style="" id="fallZoomIn"></div>
+                </div>
+                <div class="tsukanDownArea" >
+                    <div class="tsukanTitle tsukanTitleWinter">麻糬山雀</div>
+                    <div class="tsukanContent alignRight" style="margin-right: 20px;color: #7c358b; width: 210px;" id="winterText">
+                        <u>原型</u>：圓形麻糬/鏡餅<br>
+                        <u>特長</u>：偽裝成雪人<br>
+                        <u>簡介</u>：圓圓的、白白胖胖的麻糬和菓子靈，喜歡安安靜靜地埋在雪裡，飛起來時會灑落糯米粉。
+                    </div>
+                    <div class="zoomInImage ZW" style="" id="winterZoomIn"></div>
+                </div>
             </div>
         </div>
+        
+        <div class="dogEared dogEared2" id="back"></div>
+        <div class="dogEared" id="next"></div>
+        
     </div>
 
 
