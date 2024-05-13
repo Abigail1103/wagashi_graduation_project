@@ -1399,15 +1399,21 @@ a:active {
     justify-content: start;
     padding-top: 30px;
     padding-bottom: 20px;
-
-    
     
 }
+.matItem:hover {
+    scale: 105%;
+}
+
 .matItemImg {
     /* width: 110px; */
     height: 220px;
     /* margin-top: 140px; */
     /* margin-left: -50px; */
+    
+}
+.matItemImg:hover {
+    scale:105%;
     
 }
 .redLine {
@@ -1421,6 +1427,8 @@ a:active {
     /* align-items: end; */
     /* width: 130px; */
 }
+
+
 
 /* 返回鍵與選單 */
 .btn_back {
