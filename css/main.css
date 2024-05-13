@@ -831,15 +831,17 @@ a:active {
     background-image: url(../image/冬背景.png);
 }
 .bgiTsukan {
-    background-image: url(../image/圖鑑_1.png);
+    background-image: url(../image/圖鑑無印-1.png);
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     transition: all 0.5s;
+    margin: 0;
+    padding: 0;
 }
 .bgiTsukan2 {
-    background-image: url(../image/圖鑑_2.png);
+    background-image: url(../image/圖鑑無印-2.png);
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     transition: all 0.5s;
 }
 
@@ -1064,7 +1066,7 @@ a:active {
     justify-content: center;
 }
 .AnswerImage {
-    width: 60%;
+    width: 70%;
     filter: drop-shadow(0px 0px 5px rgba(85, 72, 95, 0.674));
 
 }
@@ -1086,7 +1088,7 @@ a:active {
 }
 .Ans {
     z-index: 1;
-    margin-top: -100px;
+    margin-top: -130px;
     margin-right: 30px;
 }
 .sit {
@@ -1611,6 +1613,9 @@ a:active {
     justify-content: center;
     align-items: center;
 }
+.smallFont {
+    font-size: 1.3rem;
+}
 .tsukanTitleSpring {
     background-image: url(../image/圖鑑_紙膠帶_春.png);
     color: #9D2929; 
@@ -1706,6 +1711,7 @@ a:active {
 }
 
 
+
 .zoomInImage:hover {
     scale: 160%;
     opacity: 1;
@@ -1773,8 +1779,33 @@ a:active {
     margin-left: 50px;
 }
 .mr {
-    margin-right: 30px;
+    margin-right: 45px;
 }
 .w200 {
+    width: 230px;
+}
+.seal {
+    position: absolute;
     width: 200px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    background-image: url(../image/火漆章.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 8px 5px #5c5050);
+}
+.pen {
+    position: absolute;
+    width: 300px;
+    height: 330px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../image/玻璃比.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 5px 5px #5c5050);
 }
