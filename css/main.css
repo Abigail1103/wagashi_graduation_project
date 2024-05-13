@@ -340,9 +340,10 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    
-    
-
+}
+.menu_iconarea:hover {
+    scale: 110%;
+    transition: all 0.5s;
 }
 .menu_window{
     height: 550px;
