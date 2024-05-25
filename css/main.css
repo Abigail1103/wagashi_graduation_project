@@ -1684,7 +1684,14 @@ a:active {
         scale:80%;
         font-size: 0.5rem;
     }
-}/
+    .seal{
+        scale: 80%;
+    }
+    .pen{
+        scale: 80%;
+    }
+    
+}
 @media(max-width:1040px){
     .bgiTsukan{
         scale: 125%;
@@ -1693,6 +1700,13 @@ a:active {
         scale:65%;
         font-size: 0.3rem;
     }
+    .seal{
+        scale: 65%;
+    }
+    .pen{
+        scale: 65%;
+    }
+    
 }
 @media(max-width:865px){
     /* .bgiTsukan{
@@ -1702,11 +1716,27 @@ a:active {
         scale:65%;
         font-size: 0.5rem;
     }
+    .seal{
+        scale: 50%;
+    }
+    .pen{
+        scale: 50%;
+    }
     .tsukanTitleSpring{
         margin-top: 0px;
     }
     .tsukanTitleFall{
         margin-top: 0px;
+    }
+    .dogEared{
+        scale:50%;
+        margin-right: 0;
+        padding: 0;
+    }
+    .dogEared:hover{
+        scale:60%;
+        /* margin-right: 0; */
+        padding: 0;
     }
 }
 
