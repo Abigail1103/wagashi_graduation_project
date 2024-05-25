@@ -1575,21 +1575,29 @@ a:active {
     display: flex;
     flex-direction: row;
     /* outline: solid 1px #000; */
+    /* min-width: 650px; */
+    /* max-width: 650px; */
     width: 750px;
     height: 550px;
     justify-content: space-between;
+    /* box-sizing: border-box/ */
+    /* overflow: hidden; */
 }
 .tsukanLeftArea {
     display: flex;
     flex-direction: column;
     /* outline: solid 1px blue; */
     width: 50%;
+    /* max-width: 50%; */
+    /* box-sizing: border-box; */
 }
 .tsukanRightArea {
     display: flex;
     flex-direction: column;
     /* outline: solid 1px blue; */
     width: 50%;
+    /* max-width: 50%; */
+    /* box-sizing: border-box; */
 }
 .tsukanTopArea {
     display: flex;
@@ -1654,6 +1662,7 @@ a:active {
     /* outline: solid 1px blue; */
     line-height: 150%;
     width: 180px;
+    /* max-width: 100%; */
     margin-top: 8px;
     border-radius: 8px;
     cursor: zoom-in;
@@ -1666,6 +1675,45 @@ a:active {
     /* transition: all 0.5s; */
     outline: solid 10px #fffbf4ca;
 }
+
+@media(max-width:1080px){
+    .bgiTsukan{
+        scale: 110%;
+    }
+    .tsukan4area{
+        scale:80%;
+        font-size: 0.5rem;
+    }
+}/
+@media(max-width:1040px){
+    .bgiTsukan{
+        scale: 125%;
+    }
+    .tsukan4area{
+        scale:65%;
+        font-size: 0.3rem;
+    }
+}
+@media(max-width:865px){
+    /* .bgiTsukan{
+        scale: 150%;
+    } */
+    .tsukan4area{
+        scale:65%;
+        font-size: 0.5rem;
+    }
+    .tsukanTitleSpring{
+        margin-top: 0px;
+    }
+    .tsukanTitleFall{
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
 .zoomInImage {
     position: absolute;
     width: 150px;
