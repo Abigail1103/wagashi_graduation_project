@@ -485,13 +485,31 @@ a:active {
     padding: 0;
 
 }
+.btn.left::before {
+    content: '';
+    position: absolute;
+    top: -30px; /* 根据需要调整上下左右的偏移量 */
+    bottom: -30px;
+    left: -30px;
+    right: -30px;
+}
 .btn.right {
     right: 30px;
     padding-left: 50px;
 
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    pointer-events: padding;
 
+}
+.btn.right::before {
+    content: '';
+    position: absolute;
+    top: -30px; /* 根据需要调整上下左右的偏移量 */
+    bottom: -30px;
+    left: -30px;
+    right: -30px;
 }
 
 .btn.close {
@@ -504,10 +522,20 @@ a:active {
     padding: 0;
     /* cursor: pointer; */
 }
+.btn.close::before {
+    content: '';
+    position: absolute;
+    top: -30px; /* 根据需要调整上下左右的偏移量 */
+    bottom: -30px;
+    left: -30px;
+    right: -30px;
+}
 
 .btnimage {
     width: 20px;
     height: 40px;
+    cursor: pointer;
+    
    
 }
 .btnimage:hover {

@@ -84,6 +84,10 @@ $(document).ready(function(){
         "step1": "A"
     });
     let isclick = false;
+    let isAClick = false;
+    let isBClick = false;
+    let isCClick = false;
+    let isDClick = false;
     let $sentAnswerA = $('#sentAnswerA');
     let $sentAnswerB = $('#sentAnswerB');
     let $sentAnswerC = $('#sentAnswerC');
@@ -91,7 +95,7 @@ $(document).ready(function(){
     let $navigateToNextPage = $('#navigateToNextPage');
     
     $sentAnswerA.click(function(e){
-      if(!isclick){
+      if(!isAClick || !isBClick || !isCClick || isDClick){
         let db = firebase.firestore();
         let usersRef = db.collection("users");
         let docRef = usersRef.doc("000");
@@ -100,14 +104,27 @@ $(document).ready(function(){
           "step1": "A"
         });
         $( "#sentAnswerA" ).addClass( "bgcBlack" );
-        isclick = true;
-      }else{
-        // docRef.update({
-        //   "step1": ""
-        // });
+        isAClick = true;
+      }else if(isBClick){
+        $( "#sentAnswerB" ).removeClass( "bgcBlack" );
+        $( "#sentAnswerA" ).addClass( "bgcBlack" );
+        isAClick = true;
+        isBClick = false;
+      }else if(isCClick){
+        $( "#sentAnswerC" ).removeClass( "bgcBlack" );
+        $( "#sentAnswerA" ).addClass( "bgcBlack" );
+        isAClick = true;
+        isCClick = false;
+      }else if(isDClick){
+        $( "#sentAnswerD" ).removeClass( "bgcBlack" );
+        $( "#sentAnswerA" ).addClass( "bgcBlack" );
+        isAClick = true;
+        isDClick = false;
+      }else if(isAClick){
         $( "#sentAnswerA" ).removeClass( "bgcBlack" );
-        isclick = false;
+        isAClick = false;
       }
+
     })
 
     $sentAnswerB.click(function(e){

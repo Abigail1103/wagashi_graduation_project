@@ -37,6 +37,13 @@
     padding: 0;
 }
 
+ins, u {
+    display: inline;
+}
+p {
+    white-space: normal;
+}
+
 body {
     /* opacity: 0;
     transform: translateY(20px); */
@@ -1175,11 +1182,13 @@ a:active {
     width: 600px;
     height: auto;
     background-color: rgba(241, 228, 211,0.8);
+    /* background-image: url(../image/名詞底圖.png); */
     border:solid 2px #91726c;
     display: flex;
     align-items: center;
     padding: 30px;
     flex-direction: column;
+    background-size: cover;
 }
 .TwoField {
     display: flex;
@@ -1191,11 +1200,22 @@ a:active {
     height: 100%;
     display: flex;
     color: #553d38;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     /* outline: solid 1px #000; */
     text-align: start;
     
+}
+.NewNItem {
+    background-image: url(../image/名詞底圖.png);
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 3px 3px rgba(46, 46, 46, 0.3));
 }
 .cloud {
     position: absolute;
